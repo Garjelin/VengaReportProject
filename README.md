@@ -79,9 +79,37 @@ python test_google_sheet.py
 
 ## Структура проекта
 
-- `requirements.txt` — зависимости (Google API client, auth, dotenv).
+- `requirements.txt` — зависимости (Google API client, auth, dotenv, requests).
 - `test_google_sheet.py` — скрипт для тестовой записи данных в таблицу.
+- `sync_testops_status_to_sheet.py` — синхронизация статусов тест-кейсов из TestOps на вкладку TC_STATUS (столбец B).
 - `.env.example` — пример переменных окружения (копируйте в `.env` и заполните).
 - `credentials.json` — **не коммитить**; хранить только локально (уже в `.gitignore`).
 
 Дальше можно добавлять свои отчёты и вызывать тот же API для выгрузки в нужные листы и диапазоны.
+
+---
+
+## Синхронизация статусов из TestOps в таблицу (TC_STATUS)
+
+Скрипт `sync_testops_status_to_sheet.py` читает номера тест-кейсов из **вкладки TC_STATUS, столбец A**, запрашивает у TestOps результат последнего прогона для каждого кейса и записывает статус в **столбец B** (логика как в `sync-all-from-list.sh`).
+
+### Что нужно
+
+- Та же таблица и `credentials.json` (GOOGLE_SHEET_ID, GOOGLE_CREDENTIALS_PATH).
+- В таблице — вкладка **TC_STATUS**, в столбце **A** — номера кейсов (по одному на строку, можно с комментариями через `#` или формат `id:expected`).
+- Учётные данные TestOps в `.env`:
+
+```env
+TESTOPS_URL=https://vengacrypto.testops.cloud
+TESTOPS_USERNAME=ваш_логин
+TESTOPS_PASSWORD=ваш_пароль
+```
+
+### Запуск
+
+```bash
+source .venv/bin/activate
+python sync_testops_status_to_sheet.py
+```
+
+Скрипт выведет прогресс по каждому кейсу и запишет статусы (PASSED, FAILED, BROKEN, SKIPPED, NO_RESULT и т.д.) в столбец B.
