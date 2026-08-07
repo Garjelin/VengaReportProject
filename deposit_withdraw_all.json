@@ -1,0 +1,1297 @@
+[
+  {
+    "id": 13676,
+    "name": "Deposit/Withdraw: Documents Reject screen",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13675,
+    "name": "Deposit/Withdraw: Documents Final Reject screen - tap CS button",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13674,
+    "name": "Deposit/Withdraw: Documents Final Reject screen - tap close button",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13673,
+    "name": "Deposit/Withdraw: Check Update Documents screen",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13672,
+    "name": "Deposit/Withdraw: Check Documents Verified Flow",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13671,
+    "name": "Deposit/Withdraw: Check Documents Submitted screen",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13670,
+    "name": "Deposit/Withdraw: User enters amount outside the limits -> error is shown",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address валидный адрес выбранной сети кошелька получателя\nВвести сумму ниже минимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The minimum amount is XX'\nВвести сумму выше максимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The maximum amount XX'\nВвести сумму выше баланса выбранной монеты в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'Insufficient funds"
+  },
+  {
+    "id": 13669,
+    "name": "Deposit/Withdraw: Return back from the Enter passcode screen -> Send screen is opened(clone)",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13668,
+    "name": "Deposit/Withdraw: Send Crypto -> Forgot Passcode -> passcode reset successfully",
+    "layer": "iOS",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13667,
+    "name": "Deposit/Withdraw: TC checkbox text tap leads to web view",
+    "layer": "iOS",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 13339,
+    "name": "Deposit/Withdraw: Close Withdrawal Bank Accounts Bottom Sheet",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 1 of iPhone 17 Pro - 26.4.1\nPrecondition: Go to Withdraw Fiat Dashboard Screen\n  Launch App with Setup Context\n    User Info\n      Email: iex50pl45hkkggw_ios_autotest@test.com\n      Password: Qwerty123!\n      User is verified\n    Open com.venga.ios.dev\n      Launch com.venga.ios.dev\n        Setting up automation session\n        Wait for com.venga.ios.dev to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Target Application 'com.venga.ios.dev'\n      Wait for com.venga.ios.dev to idle\n      Find the Target Application 'com.venga.ios.dev'\n      Check for interrupting elements affecting \"Venga.dev\" Application\n        Wait for com.apple.springboard to idle\n      Found 1 interrupting element:\n        Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n        \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n        Invoking “Venga.dev” Would Like to Send You Notifications\n          Checking existence of `Button (First Match)`\n        Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n          Checking existence of `\"Ask App Not to Track\" Button`\n          Tap \"Ask App Not to Track\" Button\n            Wait for com.apple.springboard to idle\n            Find the \"Ask App Not to Track\" Button\n            Check for interrupting elements affecting \"Ask App Not to Track\" Button\n            Synthesize event\n            Wait for com.apple.springboard to idle\n        Verifying handling...\n        Confirmed successful handling of interrupting element\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify elements on the 'Dashboard' screen\n    Wait end of displaying of activity indicator\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n    Verify Test Dashboard Marker\n      Waiting 30.0s for \"dashboard\" Other to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n          Checking existence of `\"dashboard\" Other`\n  Tap on 'Wallet' tab bar button\n    Waiting 15.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the Button (First Match)\n      Capturing element debug description\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Find: Elements matching predicate 'label == \"Wallet\"'\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the \"Wallet\" Button\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"Wallet\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify text title 'WALLET' on screen\n    Waiting 20.0s for \"Wallet\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n        Checking existence of `\"Wallet\" StaticText`\n  Tap on Euro (SEPA) wallet button\n    Waiting 10.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify wallet title text 'Euro'\n    Waiting 10.0s for \"EURO\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n        Checking existence of `\"EURO\" StaticText`\n  Tap on 'Withdraw' button\n    Waiting 10.0s for \"Withdraw\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Withdraw\" Button`\n        Checking existence of `\"Withdraw\" Button`\n    Tap \"Withdraw\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Withdraw\" Button\n      Check for interrupting elements affecting \"Withdraw\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify tab with text 'WITHDRAW EUR' is displayed\n    Waiting 10.0s for \"fiat_dashboard_title\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n        Capturing element debug description\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n    Find the \"fiat_dashboard_title\" StaticText\nTest Case Scenario:\n  Tap on Account button\n    Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n        Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n    Tap \"withdrawal_bank_account_button_text\" StaticText\n      Wait for com.venga.ios.dev to idle\n      Find the \"withdrawal_bank_account_button_text\" StaticText\n      Check for interrupting elements affecting \"withdrawal_bank_account_button_text\" StaticText\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify title with text 'Withdrawal Bank Accounts' is displayed\n    Waiting 10.0s for \"bank_acounts_title\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_title\" StaticText`\n        Checking existence of `\"bank_acounts_title\" StaticText`\n    Find the \"bank_acounts_title\" StaticText\n  Verify Close button is displayed\n    Waiting 10.0s for \"bank_acounts_close_button\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_close_button\" Button`\n        Checking existence of `\"bank_acounts_close_button\" Button`\n  Verify element with text 'Select the bank account you want to transfer funds to. This selection will not modify your default option.' is displayed\n    Waiting 10.0s for \"bank_acounts_subtitle\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_subtitle\" StaticText`\n        Checking existence of `\"bank_acounts_subtitle\" StaticText`\n    Find the \"bank_acounts_subtitle\" StaticText\n  Verify account button checkmark with index '0'\n    Waiting 10.0s for \"bank_acounts_iban_checkmark_0\" Image to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_checkmark_0\" Image`\n        Checking existence of `\"bank_acounts_iban_checkmark_0\" Image`\n  Verify element with index '0' with pattern 'Ending in \\d{4}' exists\n    Waiting 10.0s for \"bank_acounts_iban_title_0\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_0\" StaticText`\n        Checking existence of `\"bank_acounts_iban_title_0\" StaticText`\n    Find the \"bank_acounts_iban_title_0\" StaticText\n  Verify element with index '0' pattern 'Latest Transaction: \\d{2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \\d{4} - \\d{2}:\\d{2}' exists\n    Waiting 10.0s for \"bank_acounts_iban_last_transaction_0\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_last_transaction_0\" StaticText`\n        Checking existence of `\"bank_acounts_iban_last_transaction_0\" StaticText`\n    Find the \"bank_acounts_iban_last_transaction_0\" StaticText\n  Verify element with index '1' with pattern 'Ending in \\d{4}' exists\n    Waiting 10.0s for \"bank_acounts_iban_title_1\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_1\" StaticText`\n        Checking existence of `\"bank_acounts_iban_title_1\" StaticText`\n    Find the \"bank_acounts_iban_title_1\" StaticText\n  Verify element with index '1' pattern 'Latest Transaction: \\d{2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \\d{4} - \\d{2}:\\d{2}' exists\n    Waiting 10.0s for \"bank_acounts_iban_last_transaction_1\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_last_transaction_1\" StaticText`\n        Checking existence of `\"bank_acounts_iban_last_transaction_1\" StaticText`\n    Find the \"bank_acounts_iban_last_transaction_1\" StaticText\nTear Down\n  Terminate com.venga.ios.dev:68320"
+  },
+  {
+    "id": 13306,
+    "name": "Deposit/Withdraw: Open Withdrawal Bank Accounts Bottom Sheet",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 1 of iPhone 17 Pro - 26.4.1\nPrecondition: Go to Withdraw Fiat Dashboard Screen\n  Launch App with Setup Context\n    User Info\n      Email: iex50pl45hkkggw_ios_autotest@test.com\n      Password: Qwerty123!\n      User is verified\n    Open com.venga.ios.dev\n      Launch com.venga.ios.dev\n        Setting up automation session\n        Wait for com.venga.ios.dev to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Target Application 'com.venga.ios.dev'\n      Wait for com.venga.ios.dev to idle\n      Find the Target Application 'com.venga.ios.dev'\n      Check for interrupting elements affecting \"Venga.dev\" Application\n        Wait for com.apple.springboard to idle\n      Found 1 interrupting element:\n        Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n        \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n        Invoking “Venga.dev” Would Like to Send You Notifications\n          Checking existence of `Button (First Match)`\n        Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n          Checking existence of `\"Ask App Not to Track\" Button`\n          Tap \"Ask App Not to Track\" Button\n            Wait for com.apple.springboard to idle\n            Find the \"Ask App Not to Track\" Button\n            Check for interrupting elements affecting \"Ask App Not to Track\" Button\n            Synthesize event\n            Wait for com.apple.springboard to idle\n        Verifying handling...\n        Confirmed successful handling of interrupting element\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify elements on the 'Dashboard' screen\n    Wait end of displaying of activity indicator\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n    Verify Test Dashboard Marker\n      Waiting 30.0s for \"dashboard\" Other to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n          Checking existence of `\"dashboard\" Other`\n  Tap on 'Wallet' tab bar button\n    Waiting 15.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the Button (First Match)\n      Capturing element debug description\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Find: Elements matching predicate 'label == \"Wallet\"'\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n        Find: Descendants matching type TabBar\n        Requesting snapshot of accessibility hierarchy for app with pid 68320\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the \"Wallet\" Button\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"Wallet\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify text title 'WALLET' on screen\n    Waiting 20.0s for \"Wallet\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n        Checking existence of `\"Wallet\" StaticText`\n  Tap on Euro (SEPA) wallet button\n    Waiting 10.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify wallet title text 'Euro'\n    Waiting 10.0s for \"EURO\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n        Checking existence of `\"EURO\" StaticText`\n  Tap on 'Withdraw' button\n    Waiting 10.0s for \"Withdraw\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Withdraw\" Button`\n        Checking existence of `\"Withdraw\" Button`\n    Tap \"Withdraw\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Withdraw\" Button\n      Check for interrupting elements affecting \"Withdraw\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify tab with text 'WITHDRAW EUR' is displayed\n    Waiting 10.0s for \"fiat_dashboard_title\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n        Capturing element debug description\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n    Find the \"fiat_dashboard_title\" StaticText\nTest Case Scenario:\n  Tap on Account button\n    Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n        Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n    Tap \"withdrawal_bank_account_button_text\" StaticText\n      Wait for com.venga.ios.dev to idle\n      Find the \"withdrawal_bank_account_button_text\" StaticText\n      Check for interrupting elements affecting \"withdrawal_bank_account_button_text\" StaticText\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify title with text 'Withdrawal Bank Accounts' is displayed\n    Waiting 10.0s for \"bank_acounts_title\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_title\" StaticText`\n        Checking existence of `\"bank_acounts_title\" StaticText`\n    Find the \"bank_acounts_title\" StaticText\n  Verify Close button is displayed\n    Waiting 10.0s for \"bank_acounts_close_button\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_close_button\" Button`\n        Checking existence of `\"bank_acounts_close_button\" Button`\n  Verify element with text 'Select the bank account you want to transfer funds to. This selection will not modify your default option.' is displayed\n    Waiting 10.0s for \"bank_acounts_subtitle\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_subtitle\" StaticText`\n        Checking existence of `\"bank_acounts_subtitle\" StaticText`\n    Find the \"bank_acounts_subtitle\" StaticText\n  Verify account button checkmark with index '0'\n    Waiting 10.0s for \"bank_acounts_iban_checkmark_0\" Image to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_checkmark_0\" Image`\n        Checking existence of `\"bank_acounts_iban_checkmark_0\" Image`\n  Verify element with index '0' with pattern 'Ending in \\d{4}' exists\n    Waiting 10.0s for \"bank_acounts_iban_title_0\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_0\" StaticText`\n        Checking existence of `\"bank_acounts_iban_title_0\" StaticText`\n    Find the \"bank_acounts_iban_title_0\" StaticText\n  Verify element with index '0' pattern 'Latest Transaction: \\d{2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \\d{4} - \\d{2}:\\d{2}' exists\n    Waiting 10.0s for \"bank_acounts_iban_last_transaction_0\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_last_transaction_0\" StaticText`\n        Checking existence of `\"bank_acounts_iban_last_transaction_0\" StaticText`\n    Find the \"bank_acounts_iban_last_transaction_0\" StaticText\n  Verify element with index '1' with pattern 'Ending in \\d{4}' exists\n    Waiting 10.0s for \"bank_acounts_iban_title_1\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_1\" StaticText`\n        Checking existence of `\"bank_acounts_iban_title_1\" StaticText`\n    Find the \"bank_acounts_iban_title_1\" StaticText\n  Verify element with index '1' pattern 'Latest Transaction: \\d{2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \\d{4} - \\d{2}:\\d{2}' exists\n    Waiting 10.0s for \"bank_acounts_iban_last_transaction_1\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_last_transaction_1\" StaticText`\n        Checking existence of `\"bank_acounts_iban_last_transaction_1\" StaticText`\n    Find the \"bank_acounts_iban_last_transaction_1\" StaticText\nTear Down\n  Terminate com.venga.ios.dev:68320"
+  },
+  {
+    "id": 12457,
+    "name": "Deposit/Withdraw: TC checkbox text tap leads to web view",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'autotest_0521_151807_4208@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '369375'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'AutoQA839!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi Autotest'\nTap on Deposit button\nVerify toolbar title is displayed\nTap on 'Euro' in List View\nVerify bottom sheet title text is 'Deposit information'\nVerify coin name is 'Euro' and code is 'EUR'\nVerify transfer method title 'TRANSFER METHOD' and value 'SEPA'\nVerify 'Continue' button is disabled\nVerify Terms And Conditions Checkbox is displayed\nTap on the Terms and Conditions Checkbox text\nVerify Help Center opened: venga.com"
+  },
+  {
+    "id": 12320,
+    "name": "Deposit/Withdraw: Check Documents Submitted screen",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 12287,
+    "name": "Deposit/Withdraw: Check Documents Verified Flow",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 12286,
+    "name": "Deposit/Withdraw: Documents Final Reject screen - tap CS button",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 12285,
+    "name": "Deposit/Withdraw: Documents Final Reject screen - tap close button",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 12284,
+    "name": "Deposit/Withdraw: Documents Reject screen",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 10875,
+    "name": "Deposit/Withdraw: Send Crypto -> Forgot Passcode -> passcode reset successfully",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 10516,
+    "name": "Deposit/Withdraw: Check Update Documents screen",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 10081,
+    "name": "Deposit/Withdraw: Check deposit info sheet terms link action",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 10080,
+    "name": "Deposit/Withdraw: Check continue button",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8972,
+    "name": "Deposit/Withdraw: Choose the second bank account from the list",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8971,
+    "name": "Deposit/Withdraw: Close Withdrawal Bank Accounts Bottom Sheet",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8938,
+    "name": "Deposit/Withdraw: Open Withdrawal Bank Accounts Bottom Sheet",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8251,
+    "name": "Deposit/Withdraw: EUR Withdraw passcode screen -> Forgot Passcode -> passcode reset successfully",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8184,
+    "name": "Deposit/Withdraw. Send Crypto: Verify “Check Your Email” screen –> Go to Inbox button",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 8009,
+    "name": "Deposit/Withdraw: Confirm Network bottom sheet — Enable 'Don’t show again' -> Bottom sheet not shown on repeat tap",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 7019,
+    "name": "Deposit/Withdraw: EUR withdrawal confirmed -> funds are sent and Euro Wallet screen is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 7018,
+    "name": "Deposit/Withdraw: Withdraw EUR (fee 0) -> final amount equals amount",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 7017,
+    "name": "Deposit/Withdraw: Withdraw EUR percent tapped [25%][50%][75%][Max] (balance 3,000 EUR) -> fee and final amount are calculated",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 7016,
+    "name": "Deposit/Withdraw: Withdraw EUR percent tapped [25%][50%][75%][Max] (balance 14,000) -> amount is capped and final amount is calculated",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6983,
+    "name": "Deposit/Withdraw: Withdraw EUR amount outside limits entered -> error message is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6950,
+    "name": "Deposit/Withdraw: Selected sorting rule persists across app usage (until logout)",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6949,
+    "name": "Deposit/Withdraw: User selects each sorting option -> Deposit wallet list ordered accordingly",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6947,
+    "name": "Deposit/Withdraw: Euro wallet — tap 'Add New Bank Account' -> Bottom sheet is displayed",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'autotest_0521_151735_5121@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '790263'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'AutoQA839!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi'\nTap on 'Wallet' button in NavBar\nVerify toolbar title is 'Wallet'\nTap on currency 'Euro' button\nVerify title text is 'Euro'\nTap on 'Add New Bank Account'\nVerify title text is displayed\nVerify description text is displayed\nTap on 'Deposit' button\nVerify bottom sheet title text is 'Deposit information'"
+  },
+  {
+    "id": 6946,
+    "name": "Deposit/Withdraw: Deposit Information bottom sheet — Enable 'Don’t show again' -> Bottom sheet not shown on repeat tap",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'anx50pl45hkkggw_ios_autotest@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '651634'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'Qwerty123!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi'\nTap on 'Wallet' button in NavBar\nVerify toolbar title is 'Wallet'\nVerify fiat wallet balance is greater than zero\nTap on currency 'Euro' button\nVerify title text is 'Euro'\nTap on 'Deposit' button\nVerify bottom sheet title text is 'Deposit information'\nVerify coin name is 'Euro' and code is 'EUR'\nVerify transfer method title 'TRANSFER METHOD' and value 'SEPA'\nTap on 'Don't show again' checkbox\nTap on personal bank account (confirmation) checkbox\n  Tap on second (confirmation) checkbox\nTap on 'Continue' button\nVerify title text is 'DEPOSIT INFORMATION'\nTap on back button\nVerify title text is 'Euro'\nTap on 'Deposit' button\nVerify title text is 'DEPOSIT INFORMATION'"
+  },
+  {
+    "id": 6944,
+    "name": "Deposit/Withdraw: Send to external wallet -> Check your email screen is opened",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6943,
+    "name": "Deposit/Withdraw: MAX option if balance higher than limits -> Max limit + fee is displayed as Final amount",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6942,
+    "name": "Deposit/Withdraw: MAX option if balance lower than limits -> Available amount is displayed as Final amount",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6941,
+    "name": "Deposit/Withdraw: Send to internal wallet -> Check your email screen is opened",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6639,
+    "name": "Deposit/Withdraw. Send Crypto: Verify “Check Your Email” screen –> Go to Inbox button",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 6278,
+    "name": "Deposit/Withdraw: EUR Wallet ->  Bottom Sheet Withdroawal Bank Accounts is display",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Context:\n  The user is verified.\n  The user's residency is not from EU country. \nThe user's location does not matter.\nAction:\n  User opens Wallet\nResult:\n  \"Euro\" asset is not displayed. The user can not get access to the Euro flows."
+  },
+  {
+    "id": 5379,
+    "name": "Deposit/Withdraw: Euro wallet — tap 'Add New Bank Account' -> Bottom sheet is displayed",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 2 of iPhone 17 Pro Max - 26.4\nRegister a new user via API\n  Sending POST request to: https://api.dev-venga.com/auth/v2/auth-sessions\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/ac83c8b6-1e6e-4bcb-a2e4-d41468261e64/otp\n  Sending GET request to: https://api.dev-venga.com/auth/v2/auth-sessions/ac83c8b6-1e6e-4bcb-a2e4-d41468261e64/otp/verify\n  Sending GET request to: https://api.dev-venga.com/auth/v1/auth-sessions/ac83c8b6-1e6e-4bcb-a2e4-d41468261e64/geofencing\n  Sending GET request to: https://api.dev-venga.com/consent/v1/agreements\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/ac83c8b6-1e6e-4bcb-a2e4-d41468261e64/password/create\n  Sending GET request to: https://api.dev-venga.com/profile/v1/profiles/37b3f8b1-fe4a-439a-a16e-360e9a06170b/sections\n  Sending POST request to: https://swagger.dev-venga.com/profile/internal/v1/profiles/37b3f8b1-fe4a-439a-a16e-360e9a06170b/verifications\nLaunch App with Setup Context\n  User Info\n    Email: autotest_yw5yfaypg0lh@test.com\n    Password: Qwerty123!\n    User is verified\n  Open com.venga.ios.dev\n    Launch com.venga.ios.dev\n      Setting up automation session\n      Wait for com.venga.ios.dev to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n      Wait for com.apple.springboard to idle\n    Found 1 interrupting element:\n      Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n      \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n    Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking “Venga.dev” Would Like to Send You Notifications\n        Checking existence of `Button (First Match)`\n      Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n        Checking existence of `\"Ask App Not to Track\" Button`\n        Tap \"Ask App Not to Track\" Button\n          Wait for com.apple.springboard to idle\n          Find the \"Ask App Not to Track\" Button\n          Check for interrupting elements affecting \"Ask App Not to Track\" Button\n          Synthesize event\n          Wait for com.apple.springboard to idle\n      Verifying handling...\n      Confirmed successful handling of interrupting element\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify elements on the 'Dashboard' screen\n  Wait end of displaying of activity indicator\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n  Verify Test Dashboard Marker\n    Waiting 30.0s for \"dashboard\" Other to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n        Checking existence of `\"dashboard\" Other`\nTap on 'Wallet' tab bar button\n  Waiting 15.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n    Find the Button (First Match)\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"Wallet\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'WALLET' on screen\n  Waiting 20.0s for \"Wallet\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n      Checking existence of `\"Wallet\" StaticText`\nTap on Euro (SEPA) wallet button\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify wallet title text 'Euro'\n  Waiting 10.0s for \"EURO\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n      Checking existence of `\"EURO\" StaticText`\nTap on 'Add New Bank Account' button\n  Waiting 10.0s for \"Add New Bank Account\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Add New Bank Account\" Button`\n      Checking existence of `\"Add New Bank Account\" Button`\n  Tap \"Add New Bank Account\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Add New Bank Account\" Button\n    Check for interrupting elements affecting \"Add New Bank Account\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify bottom sheet title text 'Add New Bank Account'\n  Waiting 10.0s for \"Add New Bank Account\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Add New Bank Account\" StaticText`\n      Checking existence of `\"Add New Bank Account\" StaticText`\nVerify bottom sheet description text\n  Waiting 10.0s for StaticText (Elements matching predicate 'label CONTAINS[c] \"you'll need to make a small deposit first\"') to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object StaticText (Elements matching predicate 'label CONTAINS[c] \"you'll need to make a small deposit first\"')`\n      Checking existence of `StaticText (Elements matching predicate 'label CONTAINS[c] \"you'll need to make a small deposit first\"')`\nTap on 'Deposit' button\n  Waiting 10.0s for \"Deposit\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n      Checking existence of `\"Deposit\" Button`\n  Tap \"Deposit\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Deposit\" Button\n    Check for interrupting elements affecting \"Deposit\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nTear Down\n  Terminate com.venga.ios.dev:53443"
+  },
+  {
+    "id": 5380,
+    "name": "Deposit/Withdraw: Euro wallet — tap info icon -> bottom-sheet can be closed in different ways",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 5345,
+    "name": "Deposit/Withdraw: Selected sorting rule persists across app usage (until logout)",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 5346,
+    "name": "Deposit/Withdraw: User selects each sorting option -> Deposit wallet list ordered accordingly",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 5343,
+    "name": "Deposit/Withdraw: Deposit Information bottom sheet — Enable 'Don’t show again' -> Bottom sheet not shown on repeat tap",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 2 of iPhone 17 Pro Max - 26.4\nLogin and open the Wallet screen\n  Launch App with Setup Context\n    User Info\n      Email: iex50pl45hkkggw_ios_autotest@test.com\n      Password: Qwerty123!\n      User is verified\n    Open com.venga.ios.dev\n      Launch com.venga.ios.dev\n        Setting up automation session\n        Wait for com.venga.ios.dev to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Target Application 'com.venga.ios.dev'\n      Wait for com.venga.ios.dev to idle\n      Find the Target Application 'com.venga.ios.dev'\n      Check for interrupting elements affecting \"Venga.dev\" Application\n        Wait for com.apple.springboard to idle\n      Found 1 interrupting element:\n        Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n        \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n        Invoking “Venga.dev” Would Like to Send You Notifications\n          Checking existence of `Button (First Match)`\n        Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n          Checking existence of `\"Ask App Not to Track\" Button`\n          Tap \"Ask App Not to Track\" Button\n            Wait for com.apple.springboard to idle\n            Find the \"Ask App Not to Track\" Button\n            Check for interrupting elements affecting \"Ask App Not to Track\" Button\n            Synthesize event\n            Wait for com.apple.springboard to idle\n        Verifying handling...\n        Confirmed successful handling of interrupting element\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify elements on the 'Dashboard' screen\n    Wait end of displaying of activity indicator\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n    Verify Test Dashboard Marker\n      Waiting 30.0s for \"dashboard\" Other to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n          Checking existence of `\"dashboard\" Other`\n  Tap on 'Wallet' tab bar button\n    Waiting 15.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the Button (First Match)\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"Wallet\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\nOpen Euro, tap Deposit, select both checkboxes and tap Continue\n  Verify text title 'WALLET' on screen\n    Waiting 20.0s for \"Wallet\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n        Checking existence of `\"Wallet\" StaticText`\n  Tap on Euro (SEPA) wallet button\n    Waiting 10.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify wallet title text 'Euro'\n    Waiting 10.0s for \"EURO\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n        Checking existence of `\"EURO\" StaticText`\n  Tap on 'Deposit' button\n    Waiting 10.0s for \"Deposit\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n        Checking existence of `\"Deposit\" Button`\n    Tap \"Deposit\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Deposit\" Button\n      Check for interrupting elements affecting \"Deposit\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify text title 'Deposit Information' on the screen\n    Waiting 10.0s for \"Deposit Information\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n        Checking existence of `\"Deposit Information\" StaticText`\n  Verify currency text 'Euro' on the screen\n    Waiting 10.0s for \"Euro\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n        Checking existence of `\"Euro\" StaticText`\n  Verify transfer text 'SEPA' on the screen\n    Waiting 10.0s for \"SEPA\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"SEPA\" StaticText`\n        Checking existence of `\"SEPA\" StaticText`\n  Tap on 'Don't show this message again' checkbox\n    Waiting 10.0s for \"checkboxButton\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"checkboxButton\" Button`\n        Checking existence of `\"checkboxButton\" Button`\n    Tap \"checkboxButton\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"checkboxButton\" Button\n      Check for interrupting elements affecting \"checkboxButton\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Tap on 'Personal bank account' checkbox\n    Waiting 10.0s for \"checkboxButton\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"checkboxButton\" Button`\n        Checking existence of `\"checkboxButton\" Button`\n    Tap \"checkboxButton\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"checkboxButton\" Button\n      Check for interrupting elements affecting \"checkboxButton\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Tap on 'Continue' button\n    Waiting 10.0s for \"Continue\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Continue\" Button`\n        Checking existence of `\"Continue\" Button`\n    Find the \"Continue\" Button\n    Tap \"Continue\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Continue\" Button\n      Check for interrupting elements affecting \"Continue\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\nOn Deposit Euro screen, tap Back -> return to Euro wallet screen\n  Verify title text on the screen\n    Waiting 10.0s for \"DEPOSIT INFORMATION\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"DEPOSIT INFORMATION\" StaticText`\n        Checking existence of `\"DEPOSIT INFORMATION\" StaticText`\n  Tap on 'Back' button\n    Waiting 10.0s for \"BackButton\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"BackButton\" Button`\n        Checking existence of `\"BackButton\" Button`\n    Find the \"BackButton\" Button\n    Tap \"BackButton\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"BackButton\" Button\n      Check for interrupting elements affecting \"BackButton\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\nTap Deposit again -> Deposit Euro screen is opened\n  Verify wallet title text 'Euro'\n    Waiting 10.0s for \"EURO\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n        Checking existence of `\"EURO\" StaticText`\n  Tap on 'Deposit' button\n    Waiting 10.0s for \"Deposit\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n        Checking existence of `\"Deposit\" Button`\n    Tap \"Deposit\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Deposit\" Button\n      Check for interrupting elements affecting \"Deposit\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify title text on the screen\n    Waiting 10.0s for \"DEPOSIT INFORMATION\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"DEPOSIT INFORMATION\" StaticText`\n        Checking existence of `\"DEPOSIT INFORMATION\" StaticText`\nTear Down\n  Terminate com.venga.ios.dev:53284"
+  },
+  {
+    "id": 4525,
+    "name": "Deposit/Withdraw: User enters amount outside the limits -> error is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address валидный адрес выбранной сети кошелька получателя\nВвести сумму ниже минимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The minimum amount is XX'\nВвести сумму выше максимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The maximum amount XX'\nВвести сумму выше баланса выбранной монеты в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'Insufficient funds"
+  },
+  {
+    "id": 4524,
+    "name": "Deposit/Withdraw: User enters invalid address -> error is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address неверный адрес\nВвести корректную сумму в поле Amount to send\n  Под полем Wallet address отобразилась ошибка \"Invalid address\""
+  },
+  {
+    "id": 4521,
+    "name": "Deposit/Withdraw: Send via blockchain with TR",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Open Wallet\nChoose the wallet (for example ETH)\nTap on Send button\nFill in the required fields Address and Amoun\nClick on the Continue button\nFill in the Recipient's full name field\nFill in the Recipient's full name field\nIf the user is sending to themselves, they must check the box “I am the recipient of this transaction.”\nFill in the Wallet field\nClick on the Wallet field\nClick on the name of the platform in the Custodial section (e.g., Binance).\nClick on the Wallet field (with Binance selected as the platform)\nClick on the name of the platform in the Self Hosted section (e.g., MetaMask).\nClick on the Wallet field (with MetaMask selected as the platform)\nClick on Other\nOn the transaction confirmation page, you must check the box “I understand this transaction and wish to proceed.”\nClick on the Confirm button\nThe Check your email page opens to confirm the transaction via email."
+  },
+  {
+    "id": 4516,
+    "name": "Deposit/Withdraw. create IBAN -> generation error is displayed",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'autotest_0521_151945_9055@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '754583'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'AutoQA839!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi Autotest'\nTap on 'Wallet' button in NavBar\nVerify toolbar title is 'Wallet'\nTap on currency 'Euro' button\nVerify title text is 'Euro'\nTap on 'Deposit' button\nVerify bottom sheet title text is 'Deposit information'\nTap on second (confirmation) checkbox\nTap on 'Continue' button\nVerify title text is 'DEPOSIT INFORMATION'\nVerify IBAN error message text is 'An error occured, please contact Support.'\nVerify IBAN error text is 'Error generating IBAN'\nVerify all copy buttons are disabled"
+  },
+  {
+    "id": 4517,
+    "name": "Deposit/Withdraw: open deposit from all entry points -> Euro Deposit Disclaimer is displayed",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'autotest_0521_152020_4696@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '900719'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'AutoQA839!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi Autotest'\nTap on Deposit button\nVerify toolbar title is displayed\nTap on 'Euro' in List View\nVerify bottom sheet title text is 'Deposit information'\nVerify coin name is 'Euro' and code is 'EUR'\nVerify transfer method title 'TRANSFER METHOD' and value 'SEPA'\nVerify 'Continue' button is disabled\nVerify Terms And Conditions Checkbox is displayed\nTap on close (X) button in bottom sheet\nVerify toolbar title is displayed\nTap on 'Coin View' tab\nTap on 'Euro' in Coin View\nVerify bottom sheet title text is 'Deposit information'\nVerify coin name is 'Euro' and code is 'EUR'\nTap on close (X) button in bottom sheet\nVerify toolbar title is displayed\nTap on 'Back' button\nVerify title text contains 'Hi Autotest'\nTap on 'Wallet' button in NavBar\nVerify toolbar title is 'Wallet'\nTap on currency 'Euro' button\nVerify title text is 'Euro'\nTap on 'Deposit' button\nVerify bottom sheet title text is 'Deposit information'\nVerify coin name is 'Euro' and code is 'EUR'"
+  },
+  {
+    "id": 4518,
+    "name": "Deposit/Withdraw. Euro Deposit screen -> field values can be copied",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Stubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-wallets\nMethod: POST\n=>\nResponse:\n{\n  \"uuid\": \"68ee1a12-ff65-4653-b93b-e96502893379\",\n  \"currencyCode\": \"EUR\\\"\",\n  \"balance\": 0,\n  \"state\": \"FAILED\"\n}\nreturn code: 200\none shot: true\nStubs\n  Stub details:\nRequest:\nURL: .*/operation/v1/profiles/.*/fiat-access\nMethod: GET\n=>\nResponse:\n{\n  \"success\": true\n}\nreturn code: 200\nVerify Start screen\nTap on Start button\nVerify title text is 'ENTER YOUR E-MAIL'\nEnter email: 'anx50pl45hkkggw_ios_autotest@test.com'\nHide keyboard\nTap on 'Continue' button\nVerify title text is 'ENTER CODE'\nEnter OTP code: '612842'\nVerify title text is 'ENTER PASSWORD'\nEnter password: 'Qwerty123!'\nHide keyboard\nTap on Continue button\nVerify title text is 'CREATE PASSCODE'\nEnter passcode: '123456'\nVerify title text is 'REPEAT PASSCODE'\nEnter passcode: '123456'\nVerify title text contains 'Hi'\nTap on 'Wallet' button in NavBar\nVerify toolbar title is 'Wallet'\nVerify fiat wallet balance is greater than zero\nTap on currency 'Euro' button\nVerify title text is 'Euro'\nTap on 'Deposit' button\nVerify bottom sheet title text is 'Deposit information'\nTap on second (confirmation) checkbox\nTap on 'Continue' button\nVerify title text is 'DEPOSIT INFORMATION'\nTap on IBAN copy button\nVerify snackbar text is 'IBAN Copied!'\nWait for 3 seconds\nTap on Recipient Name copy button\nVerify snackbar text is 'Recipient Name Copied!'\nWait for 3 seconds\nTap on Bank Name copy button\nVerify snackbar text is 'Bank Name Copied!'\nWait for 3 seconds\nTap on BIC copy button\nVerify snackbar text is 'BIC Copied!'\nWait for 3 seconds\nTap on Recipient Address copy button\nVerify snackbar text is 'Recipient Address Copied!'"
+  },
+  {
+    "id": 4485,
+    "name": "Deposit/Withdraw: User enters own address -> Error is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address корректный адрес кошелька текущего аккаунта\nВвести корректную сумму в поле Amount to send\nПосле ввода суммы происходит валидация полей. Под полем с адресом отобразилась ошибка \"You can't send funds to your own wallet\""
+  },
+  {
+    "id": 4484,
+    "name": "Deposit/Withdraw: User taps percentage options in the Amount field -> Chosen option is applied",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 4483,
+    "name": "Deposit/Withdraw: User enters address from another network -> error is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address корректный адрес кошелька из любой другой сети\nВвести корректную сумму в поле Amount to send\n  После ввода суммы происходит валидация полей. Под полем с адресом отобразилась ошибка \"Invalid address\""
+  },
+  {
+    "id": 4411,
+    "name": "Deposit/Withdraw: Deposit. Check deposit screen just verified user from Individual wallet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Пройти верификацию в самсабе\nНа экране Wallet открыть любой кошелёк\nПроверка кнопок Tap to Show my addres, copy, QR, Deposit"
+  },
+  {
+    "id": 4410,
+    "name": "Deposit/Withdraw: Deposit. Check deposit screen just verified user",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Пройти верификацию в самсабе\nНа дашборде нажать Deposit\nПроставить чекбокс\nНажать Continue"
+  },
+  {
+    "id": 4403,
+    "name": "Deposit/Withdraw: tap 'Copy' -> confirmation snackbar is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список кошельков для пополнения\nНажать Coin view в таб-баре\n  Отображение кошельков поменялось со списка на 3D-монеты\nВыбрать любой токен в списке\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Tap to show my address\n  В поле отобразился адрес кошелька\nНажать на отобразившийся адрес кошелька\n  Отобразился всплывающий тост \"Address Copied\""
+  },
+  {
+    "id": 4131,
+    "name": "Deposit/Withdraw: Deposit. Deposit from Wallet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране Wallet тап на Deposit или QR\nПроставить чекбокс\nНажать Continue"
+  },
+  {
+    "id": 4129,
+    "name": "Deposit/Withdraw: Logic of preserving sorting",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране дашборда нажать Deposit\nНажать на иконку рядом с текстом Assets\nВыбрать к примеру сортировку Alphabetically Z to A\nСвернуть и развернуть приложение\nНа дашборде нажать на Deposit\nЗакрыть и открыть приложение\nНа дашборде тап на Deposit"
+  },
+  {
+    "id": 4128,
+    "name": "Deposit/Withdraw: Deposit. Sort logic \"Lowest Value to Highest\" and \"Highest Value to Lowest\"",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране дашборда нажать Deposit\nНажать на иконку рядом с текстом Assets\nПроставить галочку рядом с текстом Highest Value to Lowest\nСнова нажать на иконку рядом с текстом Assets\nПроставить галочку рядом с текстом Lowest Value to Highest"
+  },
+  {
+    "id": 4126,
+    "name": "Deposit/Withdraw: Deposit. Asset list sorting logic. Default state.",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране дашборда нажать Deposit"
+  },
+  {
+    "id": 4123,
+    "name": "Deposit/Withdraw: Проверка кнопки Don't show this message again",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В разделе Wallet тап на Euro\nТап на кнопку Deposit\nПроставить чекбокс рядом с текстом Don't show this message again\nПроставить второй чекбокс I understand that deposits must be made from my personal bank account\nНажать на Continue\nВернуться обратно на экран Euro\nНажать снова на Deposit"
+  },
+  {
+    "id": 4122,
+    "name": "Deposit/Withdraw: Юзер без банковских аккаунтов",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В разделе Wallet тап на Euro\nТап на текст Add New Bank Account\nТап на кнопку Deposit\nПроставить чекбокс рядом с текстом \"I understand that deposits must be made from my personal bank account\"\nНажать на Continue"
+  },
+  {
+    "id": 4121,
+    "name": "Deposit/Withdraw: Юзер с нулевым балансом",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В разделе Wallet тап на Euro\nТап на Withdraw\nТап на кнопку Deposit\nПроставить чекбокс рядом с текстом \"I understand that deposits must be made from my personal bank account\"\nНажать на Continue"
+  },
+  {
+    "id": 4120,
+    "name": "Deposit/Withdraw: Кнопка Add New Account",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В разделе Wallet тап на Euro\nТап на текст \"Ending in XXXX\"\nСвайпнуть в самый низ\nТап на Add New Account\nПроставить чекбокс рядом с текстом \"I understand that deposits must be made from my personal bank account\"\nНажать на Continue"
+  },
+  {
+    "id": 4119,
+    "name": "Deposit/Withdraw: Deposit/Withdraw:  Euro wallet, tap [Deposit] -> \"Deposit information\" bottom sheet is opened",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В разделе Wallet тап на Euro\nТап на кнопку Deposit\nПроставить чекбокс рядом с текстом \"I understand that deposits must be made from my personal bank account\"\nНажать на Continue"
+  },
+  {
+    "id": 4117,
+    "name": "Deposit/Withdraw: Кнопка Deposit на дашборде",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На дашборде тап на Deposit\nНажать на Euro\nПроставить чекбокс рядом с текстом \"I understand that deposits must be made from my personal bank account\"\nНажать на Continue"
+  },
+  {
+    "id": 4116,
+    "name": "Deposit/Withdraw: Withdraw EUR (fee 0) -> final amount equals amount",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "В поле \"Amount\" ввести валидное значение (в пределах минимального-максимального значения, в пределах своего баланса).\n  Поле \"Amount\" - заполненно введенным значением\n  Отправлен запрос \nGET /operation/v1/fiat-wallets/***/withdrawals/fee?amount=***&currencyCode=EUR\n  На запрос выше получен ответ\n{\n\t\"feeAmount\": 0 .0\n}\n  Поле \"Fee:\" = Zero (оранжевым цветом)\n  Кнопка [Continue] активна."
+  },
+  {
+    "id": 4099,
+    "name": "Deposit/Withdraw: Amount: Manual input more than Maximum limit.  Balance >10000 Eur",
+    "layer": "",
+    "automated": false,
+    "steps_text": "В поле \"Amount\" ввести чисто превышающее Максимальный лимит (Обычно AML лимит 10000 евро). \nНапример, при балансе 11000 евро, ввести 10001.\n  Поле \"Amount\" - заполненно введенным значением\n  Ошибка под полем - текст на красном фоне:\n\"The maximum amount is 10 000.00 EUR\"\n  Кнопка [Continue] не активна."
+  },
+  {
+    "id": 4098,
+    "name": "Deposit/Withdraw: Withdraw EUR percent tapped [25%][50%][75%][Max] (balance 14,000) -> amount is capped and final amount is calculated",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тап на [25%]\n  Поле \"Amount\" - 3500.00\n(= Available * 0.25)\n  Fee: 5.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=3500.0)\n  Final Amount: 3505.00 EUR \n(= Amount + Fee)\nТап на [50%]\n  Поле \"Amount\" - 7000.00\n(= Available * 0.50)\n  Fee: 10.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=7000.0)\n  Final Amount: 7010.00 EUR \n(= Amount + Fee)\nТап на [75%]\n  Поле \"Amount\" - 10500.00\n(= Available * 0.5)\n  Fee: 10.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=10000.0)\n  Final Amount: 10510.00 EUR \n(= Max limit + Fee)\n  Показываем ошибку превышен максимум 10000\nТап на [Max]\n  Поле \"Amount\" - 10000.00\n(= Текущий максимальный лимит AML)\n  Fee: 10.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=10000.0)\n  Final Amount: 10010.00 EUR \n(= Max limit + Fee)"
+  },
+  {
+    "id": 4092,
+    "name": "Deposit/Withdraw: Deposit. Euro selected in Settings",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На дашборде тап на Deposit\nНовые разделы «Fiat» и «Assets», выделенные рамкой и разделенные друг от друга.\nВ самом вверху отображена Евро\nВ правом углу от Евро отображается сумма только в Евро без доллара"
+  },
+  {
+    "id": 4050,
+    "name": "Deposit/Withdraw: User taps percentage options in the Amount field -> Chosen option is applied",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 4051,
+    "name": "Deposit/Withdraw: Return back from the Enter passcode screen -> Send screen is opened",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 4048,
+    "name": "Deposit/Withdraw: Send to external wallet -> Check your email screen is opened",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти во флоу Send\nЗаполнить все поля валидными данными\nНажать Continue\nПроставить чекбокс\nНажать Confirm\nВвести правильный пасскод"
+  },
+  {
+    "id": 4047,
+    "name": "Deposit/Withdraw: Description field logic — expand, collapse, clear",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать \"+\" в строке Add a description\n  Раскрылось текстовое поле для описания транзакции, символ \"+\" изменился на \"-\". Автоматический фокус на поле, отобразилась клавиатура\nВвести любой символ в текстовое поле\n  Символ \"-\" окрасился в зелёный цвет\nНажать на \"-\"\n  Поле свернулось, символ изменился на \"+\" и окрашен в зелёный цвет, т.к. поле содержит информацию\nРазвернуть поле\nНажать \"x\"\n  Поле очистилось, символ содержания поля окрасился в серый цвет"
+  },
+  {
+    "id": 4040,
+    "name": "Deposit/Withdraw: MAX option if balance lower than limits -> Available amount is dispalyed as Final amount",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти в любой кошелёк с балансом\nНажать Send\nНажать MAX над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная балансу пользователя по выбранному кошельку, за исключением комиссии за перевод (Available balance - fee). В строке Final amount отображается значение, равное доступному балансу пользователя"
+  },
+  {
+    "id": 4039,
+    "name": "Deposit/Withdraw: MAX option if balance higher than limits -> Max limit + fee is dispalyed as Final amount",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти в любой кошелёк с балансом\nНажать Send\nНажать MAX над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная максимальной доступной сумме для перевода (MAX limit). В строке Final amount отобразилась максимально доступная сумма для перевода + комиссия (MAX + Fee)"
+  },
+  {
+    "id": 4037,
+    "name": "Deposit/Withdraw: Withdraw Euro -> Balance tag shows current wallet balance",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nПосмотреть и запомнить текущий баланс EURO, отображённый на виджете кошелька.\nНажать Withdraw.\nНайти тег BALANCE в coin-блоке и сравнить его значение с запомненным балансом.\nУбедиться, что оба значения совпадают."
+  },
+  {
+    "id": 4036,
+    "name": "Deposit/Withdraw: Withdraw Euro -> New coin section layout",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nНажать кнопку Withdraw\nУбедиться, что заголовок страницы — Withdraw Eur (короткая форма)\nУбедиться, что сразу под заголовком отображается coin-блок в виде светло-серой рамки с округлёнными углами, внутри которой размещён значок монеты и теги\nПроверить наличие тега METHOD INSTANT SEPA\nПроверить наличие тега BALANCE\nПроверить тонкие горизонтальные section dividers:\n• между coin-блоком и секцией Withdrawal Bank Account;\n• между Withdrawal Bank Account и полем Amount;\n• между полем Amount и компонентом Add a description.\nУбедиться, что старая секция Transfer method отсутствует"
+  },
+  {
+    "id": 4034,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts -> Remove last account",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nНажать строку Ending X и дождаться bottom-sheet Withdrawal Bank Accounts\nНажать Remove Account возле Ending X. Появляется bottom-sheet Confirm Bank Account Removal\nНажать кнопку Confirm\nУбедиться, что оба окна (Confirm Bank Account Removal и Withdrawal Bank Accounts) закрылись\nУбедиться, что в блоке Withdrawal Bank Account снова отображается пустое состояние Add New Bank Account\nУбедиться, что сверху экрана отображается баннер с подтверждением удаления"
+  },
+  {
+    "id": 4033,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts -> Remove account (multiple accounts)",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nНажать на элемент Ending X и дождаться открытия bottom-sheet\nРядом с Ending Y нажать Remove Account. Появляется bottom-sheet Confirm Bank Account Removal\nНажать кнопку Confirm.\nУбедиться, что окно Confirm Bank Account Removal закрылось.\nУбедиться, что в списке счёт Ending Y исчез (список обновлён).\nЗакрыть bottom-sheet Withdrawal Bank Accounts.\nУбедиться, что сверху экрана отображается баннер с подтверждением удаления"
+  },
+  {
+    "id": 4032,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts -> Keep user-selected Default after adding new account",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nУбедиться, что в блоке Withdrawal Bank Account отображается Ending Y с меткой Default\nНажать на строку Ending Y и дождаться появления bottom-sheet Withdrawal Bank Accounts\nВ bottom-sheet нажать кнопку Add New Account. Откроется экран Deposit Info; завершить добавление нового счёта (Ending Z)\nВернуться в Wallet -> EURO\nУбедиться, что Default по-прежнему задан для Ending Y\nУбедиться, что новый счёт Ending Z отображается первым в списке без метки Default"
+  },
+  {
+    "id": 4030,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts -> Add New Account",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nНажать на элемент Ending X и дождаться открытия bottom-sheet\nВ bottom-sheet нажать Add New Account\nУбедиться, что bottom-sheet закрылся и открылся экран Deposit Info"
+  },
+  {
+    "id": 4029,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts -> Open list",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nУбедиться, что в блоке Withdrawal Bank Account отображается дефолтный счёт Ending X\nНажать на элемент Ending X\nУбедиться, что открылся Withdrawal Bank Accounts bottom-sheet\nУбедиться, что счёта отсортированы от самого нового к самому старому\nУбедиться, что у счёта Ending X стоит метка Default"
+  },
+  {
+    "id": 4027,
+    "name": "Deposit/Withdraw: Add New Bank Account bottom sheet opens and linking starts",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Авторизоваться и открыть экран Wallet\nОткрыть валюту EURO\nУбедиться, что в блоке Withdrawal Bank Account отображается кнопка Add New Bank Account\nНажать на компонент Add New Bank Account\nУбедиться, что открылся bottom sheet с заголовком, описанием и кнопкой Deposit\nНажать на кнопку Deposit\nУбедиться, что bottom sheet закрылся и в блоке Withdrawal Bank Account отображается статус “Loading, please wait…"
+  },
+  {
+    "id": 4022,
+    "name": "Deposit/Withdraw: Проверка компонента Withdrawal Bank Account",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране Wallet нажать EUR\nНажать на текст “Ending in XXXX\"\nВыбрать любой другой банковский счёт"
+  },
+  {
+    "id": 4021,
+    "name": "Deposit/Withdraw: Withdrawal Bank Accounts INFO bottom sheet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране Wallet нажать EUR\nНажать на инфо иконку рядом с текстом Withdrawal Bank Account\nНажать на I understand, свернуть, или нажать \"х\""
+  },
+  {
+    "id": 4007,
+    "name": "Deposit/Withdraw: Проверка компонента Add description",
+    "layer": "",
+    "automated": false,
+    "steps_text": "На экране EUR нажать на Withdraw\nНажать на \"+\" или Add description\nВвести в поле любой текст\nНажать на значок \"-\""
+  },
+  {
+    "id": 3994,
+    "name": "Deposit/Withdraw: Confirm Network bottom sheet - Enable 'Don’t show again' -> Bottom sheet not shown on repeat tap",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 3862,
+    "name": "Deposit/Withdraw: Send to internal wallet -> Check your email screen is opened",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать на  Send\nЗаполнить все поля необходимыми данными\nНажать Continue\nПрождать 1 секунду\nНажать на Confirm"
+  },
+  {
+    "id": 3846,
+    "name": "Deposit/Withdraw: Description field logic — expand, collapse, clear",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать \"+\" в строке Add a description\n  Раскрылось текстовое поле для описания транзакции, символ \"+\" изменился на \"-\". Автоматический фокус на поле, отобразилась клавиатура\nВвести любой символ в текстовое поле\n  Символ \"-\" окрасился в зелёный цвет\nНажать на \"-\"\n  Поле свернулось, символ изменился на \"+\" и окрашен в зелёный цвет, т.к. поле содержит информацию\nРазвернуть поле\nНажать \"x\"\n  Поле очистилось, символ содержания поля окрасился в серый цвет"
+  },
+  {
+    "id": 3805,
+    "name": "Deposit/Withdraw: Send. Available balance < Limits + Fee",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти в любой кошелёк с балансом\nНажать Send\nНажать MAX над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная балансу пользователя по выбранному кошельку, за исключением комиссии за перевод (Available balance - fee). В строке Final amount отображается значение, равное доступному балансу пользователя"
+  },
+  {
+    "id": 3804,
+    "name": "Deposit/Withdraw: Send. Available balance > Limits + Fee",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти в любой кошелёк с балансом\nНажать Send\nНажать MAX над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная максимальной доступной сумме для перевода (MAX limit). В строке Final amount отобразилась максимально доступная сумма для перевода + комиссия (MAX + Fee)"
+  },
+  {
+    "id": 3766,
+    "name": "Deposit/Withdraw: Send. Input field logic",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Перейти в любой кошелёк с балансом\nНажать Send\nНажать 25% над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная 25% от баланса текущего кошелька. Ниже отобразился фиатный эквивалент в базовой валюте пользователя\nНажать 50% над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная 50% от баланса текущего кошелька. Ниже отобразился фиатный эквивалент в базовой валюте пользователя\nНажать 75% над полем Amount\n  В поле Amount автоматически прописалась сумма, эквивалентная 75% от баланса текущего кошелька. Ниже отобразился фиатный эквивалент в базовой валюте пользователя"
+  },
+  {
+    "id": 3696,
+    "name": "Deposit/Withdraw: Send.  Biometric auth for Withdrawal confirmation",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Перейти во флоу Send\nЗаполнить все поля валидными данными\nНажать Continue\nПроставить чекбокс\nНажать Confirm\nПройти биометрическую проверку"
+  },
+  {
+    "id": 3668,
+    "name": "Deposit/Withdraw: Send. Passcode Security on transaction confirmation",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти во флоу Send\nЗаполнить все поля валидными данными\nНажать Continue\nПроставить чекбокс\nНажать Confirm\nВвести правильный пасскод"
+  },
+  {
+    "id": 3328,
+    "name": "Deposit/Withdraw: Restriction of fiat withdrawal FLOW for the non-EU resident user",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Context:\n  The user is verified.\n  The user's residency is not from EU country. \nThe user's location does not matter.\nAction:\n  User opens Wallet\nResult:\n  \"Euro\" asset is not displayed. The user can not get access to the Euro flows."
+  },
+  {
+    "id": 3265,
+    "name": "Deposit/Withdraw: EUR withdrawal confirmed -> funds are sent and Euro Wallet screen is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тап по кнопке Confirm\n  Открывается экран Withraw Processing\n  Отображаются данные amount и fee\n  Кнопка Done"
+  },
+  {
+    "id": 3248,
+    "name": "Deposit/Withdraw: tap 'Share' -> system share sheet is opened",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список кошельков для пополнения\nВыбрать любой токен из списка\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Share address\n  Открылся системный BottomSheet с возможностью поделиться адресом кошелька"
+  },
+  {
+    "id": 3243,
+    "name": "Deposit/Withdraw: save QR as image -> confirmation snackbar is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список кошельков для пополнения\nНажать Coin view в таб-баре\n  Отображение кошельков поменялось со списка на 3D-монеты\nВыбрать любой токен в списке\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Tap to show my address\n  В поле отобразился адрес кошелька\nНажать на отобразившийся адрес кошелька\n  Отобразился всплывающий тост \"Address Copied\""
+  },
+  {
+    "id": 3227,
+    "name": "Deposit/Withdraw: Searching for a non-existing token -> empty state is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список доступных для пополнения кошельков\nВ поле поиска ввести название токена, которого нет в списке\n  Отобразился текст \"No Currency found. Please try a different name or symbol.\""
+  },
+  {
+    "id": 3208,
+    "name": "Deposit/Withdraw: Euro Wallet opened -> Withdraw Euro screen is displayed",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тапнуть на кнопку WIthdraw\n  Открылся экран Withdraw Euro\n  Заголовок Withdraw Euro\n  MIN, MAX, FEE - приходят с бэка\n  Withdrawal IBAN - маска\n  You send - иконка евро, поле не заполнено\n  Available - баланс кошелька\n  Transfer Method Sepa\n  Fee - значение с бэка\n  Total amount received\n  Description - плейсхолдер Thanks!\n  Processing time\n  Кнопка Review неактивна"
+  },
+  {
+    "id": 3209,
+    "name": "Deposit/Withdraw: Choose the second bank account from the list",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 1 of iPhone 17 Pro - 26.4.1\nPrecondition: Go to Withdraw Fiat Dashboard Screen\n  Launch App with Setup Context\n    User Info\n      Email: iex50pl45hkkggw_ios_autotest@test.com\n      Password: Qwerty123!\n      User is verified\n    Open com.venga.ios.dev\n      Launch com.venga.ios.dev\n        Setting up automation session\n        Wait for com.venga.ios.dev to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Application 'com.apple.springboard'\n      Wait for com.apple.springboard to idle\n      Find the Application 'com.apple.springboard'\n      Check for interrupting elements affecting \" \" Application\n        Wait for com.venga.ios.dev to idle\n      Synthesize event\n      Wait for com.apple.springboard to idle\n    Tap Target Application 'com.venga.ios.dev'\n      Wait for com.venga.ios.dev to idle\n      Find the Target Application 'com.venga.ios.dev'\n      Check for interrupting elements affecting \"Venga.dev\" Application\n        Wait for com.apple.springboard to idle\n      Found 1 interrupting element:\n        Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n        \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n        Invoking “Venga.dev” Would Like to Send You Notifications\n          Checking existence of `Button (First Match)`\n        Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n          Checking existence of `\"Ask App Not to Track\" Button`\n          Tap \"Ask App Not to Track\" Button\n            Wait for com.apple.springboard to idle\n            Find the \"Ask App Not to Track\" Button\n            Check for interrupting elements affecting \"Ask App Not to Track\" Button\n            Synthesize event\n            Wait for com.apple.springboard to idle\n        Verifying handling...\n        Confirmed successful handling of interrupting element\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify elements on the 'Dashboard' screen\n    Wait end of displaying of activity indicator\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n        Capturing element debug description\n      Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n        Checking existence of `ActivityIndicator (First Match)`\n    Verify Test Dashboard Marker\n      Waiting 30.0s for \"dashboard\" Other to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n          Checking existence of `\"dashboard\" Other`\n  Tap on 'Wallet' tab bar button\n    Waiting 15.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the Button (First Match)\n      Capturing element debug description\n        Requesting snapshot of accessibility hierarchy for app with pid 45716\n        Requesting snapshot of accessibility hierarchy for app with pid 45716\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Find: Elements matching predicate 'label == \"Wallet\"'\n        Requesting snapshot of accessibility hierarchy for app with pid 45716\n        Find: Descendants matching type TabBar\n        Find: Descendants matching type Button\n        Requesting snapshot of accessibility hierarchy for app with pid 45716\n        Find: Descendants matching type TabBar\n        Requesting snapshot of accessibility hierarchy for app with pid 45716\n    Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n      Find the \"Wallet\" Button\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"Wallet\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify text title 'WALLET' on screen\n    Waiting 20.0s for \"Wallet\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n        Checking existence of `\"Wallet\" StaticText`\n  Tap on Euro (SEPA) wallet button\n    Waiting 10.0s for Button (First Match) to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n        Checking existence of `Button (First Match)`\n    Tap Button (First Match)\n      Wait for com.venga.ios.dev to idle\n      Find the Button (First Match)\n      Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify wallet title text 'Euro'\n    Waiting 10.0s for \"EURO\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n        Checking existence of `\"EURO\" StaticText`\n  Tap on 'Withdraw' button\n    Waiting 10.0s for \"Withdraw\" Button to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"Withdraw\" Button`\n        Checking existence of `\"Withdraw\" Button`\n    Tap \"Withdraw\" Button\n      Wait for com.venga.ios.dev to idle\n      Find the \"Withdraw\" Button\n      Check for interrupting elements affecting \"Withdraw\" Button\n      Synthesize event\n      Wait for com.venga.ios.dev to idle\n  Verify tab with text 'WITHDRAW EUR' is displayed\n    Waiting 10.0s for \"fiat_dashboard_title\" StaticText to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n        Capturing element debug description\n      Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n        Checking existence of `\"fiat_dashboard_title\" StaticText`\n    Find the \"fiat_dashboard_title\" StaticText\nTest Case Scenario:\n  Go to Withdrawal Bank Accounts Screen and Verify first bank account is selected\n    Tap on Account button\n      Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n          Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n      Tap \"withdrawal_bank_account_button_text\" StaticText\n        Wait for com.venga.ios.dev to idle\n        Find the \"withdrawal_bank_account_button_text\" StaticText\n        Check for interrupting elements affecting \"withdrawal_bank_account_button_text\" StaticText\n        Synthesize event\n        Wait for com.venga.ios.dev to idle\n    Verify title with text 'Withdrawal Bank Accounts' is displayed\n      Waiting 10.0s for \"bank_acounts_title\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_title\" StaticText`\n          Checking existence of `\"bank_acounts_title\" StaticText`\n      Find the \"bank_acounts_title\" StaticText\n    Verify First Account Is Selected\n      Waiting 10.0s for \"bank_acounts_iban_checkmark_0\" Image to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_checkmark_0\" Image`\n          Checking existence of `\"bank_acounts_iban_checkmark_0\" Image`\n  Get title of the second bank account and Choose the second bank account from the list\n    Get button title vallue with index 1\n      Waiting 10.0s for \"bank_acounts_iban_title_1\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_1\" StaticText`\n          Checking existence of `\"bank_acounts_iban_title_1\" StaticText`\n    Find the \"bank_acounts_iban_title_1\" StaticText\n    Button title vallue with index 1 is 'Ending in 1015'\n    Find the \"bank_acounts_iban_title_1\" StaticText\n    Tap on button with index 1\n      Waiting 10.0s for \"bank_acounts_iban_button_1\" Button to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_button_1\" Button`\n          Checking existence of `\"bank_acounts_iban_button_1\" Button`\n      Tap \"bank_acounts_iban_button_1\" Button\n        Wait for com.venga.ios.dev to idle\n        Find the \"bank_acounts_iban_button_1\" Button\n        Check for interrupting elements affecting \"bank_acounts_iban_button_1\" Button\n        Synthesize event\n        Wait for com.venga.ios.dev to idle\n  Check account 'Ending in 1015' is equal to  previously selected account\n    Verify tab with text 'WITHDRAW EUR' is displayed\n      Waiting 10.0s for \"fiat_dashboard_title\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n          Checking existence of `\"fiat_dashboard_title\" StaticText`\n      Find the \"fiat_dashboard_title\" StaticText\n    Verify tab with text 'Ending in 1015' is displayed\n      Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n          Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n      Find the \"withdrawal_bank_account_button_text\" StaticText\n  Go to Withdrawal Bank Accounts Screen and Verify first account with text 'Ending in 1015' is selected\n    Tap on Account button\n      Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n          Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n      Tap \"withdrawal_bank_account_button_text\" StaticText\n        Wait for com.venga.ios.dev to idle\n        Find the \"withdrawal_bank_account_button_text\" StaticText\n        Check for interrupting elements affecting \"withdrawal_bank_account_button_text\" StaticText\n        Synthesize event\n        Wait for com.venga.ios.dev to idle\n    Verify title with text 'Withdrawal Bank Accounts' is displayed\n      Waiting 10.0s for \"bank_acounts_title\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_title\" StaticText`\n          Checking existence of `\"bank_acounts_title\" StaticText`\n      Find the \"bank_acounts_title\" StaticText\n    Verify First Account Is Selected\n      Waiting 10.0s for \"bank_acounts_iban_checkmark_0\" Image to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_checkmark_0\" Image`\n          Checking existence of `\"bank_acounts_iban_checkmark_0\" Image`\n    Verify Account title with text 'Ending in 1015' is displayed\n      Waiting 10.0s for \"bank_acounts_iban_title_0\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_0\" StaticText`\n          Checking existence of `\"bank_acounts_iban_title_0\" StaticText`\n      Find the \"bank_acounts_iban_title_0\" StaticText\n  Get title of the second bank account and Choose the second bank account from the list\n    Get button title vallue with index 1\n      Waiting 10.0s for \"bank_acounts_iban_title_1\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_title_1\" StaticText`\n          Checking existence of `\"bank_acounts_iban_title_1\" StaticText`\n    Find the \"bank_acounts_iban_title_1\" StaticText\n    Button title vallue with index 1 is 'Ending in 1134'\n    Find the \"bank_acounts_iban_title_1\" StaticText\n    Tap on button with index 1\n      Waiting 10.0s for \"bank_acounts_iban_button_1\" Button to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"bank_acounts_iban_button_1\" Button`\n          Checking existence of `\"bank_acounts_iban_button_1\" Button`\n      Tap \"bank_acounts_iban_button_1\" Button\n        Wait for com.venga.ios.dev to idle\n        Find the \"bank_acounts_iban_button_1\" Button\n        Check for interrupting elements affecting \"bank_acounts_iban_button_1\" Button\n        Synthesize event\n        Wait for com.venga.ios.dev to idle\n  Check account 'Ending in 1134' is equal to  previously selected account\n    Verify tab with text 'WITHDRAW EUR' is displayed\n      Waiting 10.0s for \"fiat_dashboard_title\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"fiat_dashboard_title\" StaticText`\n          Checking existence of `\"fiat_dashboard_title\" StaticText`\n      Find the \"fiat_dashboard_title\" StaticText\n    Verify tab with text 'Ending in 1134' is displayed\n      Waiting 10.0s for \"withdrawal_bank_account_button_text\" StaticText to exist\n        Checking `Expect predicate `existsNoRetry == 1` for object \"withdrawal_bank_account_button_text\" StaticText`\n          Checking existence of `\"withdrawal_bank_account_button_text\" StaticText`\n      Find the \"withdrawal_bank_account_button_text\" StaticText\nTear Down\n  Terminate com.venga.ios.dev:45716"
+  },
+  {
+    "id": 3211,
+    "name": "Deposit/Withdraw: Withdraw EUR amount outside limits entered -> error message is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Ввести значение больше максимального\n  Отображается ошибка Insufficient Funds\n  Кнопка Review неактивна"
+  },
+  {
+    "id": 3213,
+    "name": "Deposit/Withdraw: EUR withdrawal enter valid amount and description -> navigate to Confirm Withdrawal screen",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тапнуть на кнопку Review\n  Открывается экран Confirm Euro Withdrawal\n  Amount to be received = total - fee\nDetails\n  Total amount\n  Transaction Fee\n  Transfer Method\n  Withdrawal IBAN\n  Description (если было заполнено на предыдущем шаге)"
+  },
+  {
+    "id": 3207,
+    "name": "Deposit/Withdraw: Navigation from 'Withdraw Euro' screen back To 'Euro Wallet'",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 3200,
+    "name": "Deposit/Withdraw: Search for existing token -> token appears in results",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список доступных для пополнения кошельков\nВ поле поиска ввести currency code любого токена\n  Список обновился в соответствии с условиями поискового запроса\nВ поле поиска ввести название любого токена\n  Список обновился в соответствии с условиями поискового запроса\nВ поле поиска ввести название любой сети\n  Список обновился в соответствии с условиями поискового запроса"
+  },
+  {
+    "id": 3199,
+    "name": "Deposit/Withdraw: Searching for a non-existing token -> empty state is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать Deposit\n  Открылся список доступных для пополнения кошельков\nВ поле поиска ввести название токена, которого нет в списке\n  Отобразился текст \"No Currency found. Please try a different name or symbol.\""
+  },
+  {
+    "id": 3110,
+    "name": "Deposit/Withdraw: EUR withdraw opened -> 'Make a Deposit First' bottom-sheet can be closed in different ways",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": ""
+  },
+  {
+    "id": 3111,
+    "name": "Deposit/Withdraw: EUR withdraw opened -> 'Make a Deposit First' bottom-sheet leads to Deposit info",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тап на [Deposit]"
+  },
+  {
+    "id": 3108,
+    "name": "Deposit/Withdraw: Change app currency -> Euro Wallet displays correct currency",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Убедиться, что номинальная стоимость всех активов на вкладке  \"Wallet\" рассчитана и показана в валюте по умолчанию (в данном случае - Евро)\nУбедиться, что сумма активов в \"Total Balance\" на вкладке  \"Wallet\" рассчитана и показана в валюте по умолчанию (в данном случае - Евро)\nПерейти в Евро кошелек и проверить валюту его баланса\nПереключить в настройках Settings - Currency валюту на US Dollar и вернуться на Евро кошелек\nНажать [<]\nСравнить баланс \"Total Balance\" на вкладках \"Wallet\" и \"Home\"\n  Сравнить сумму баланса в \"Total Balance\" на вкладке \"Wallet\" с суммой \"Total Balance\"  на вкладке \"Home\"  в выбранной валюте"
+  },
+  {
+    "id": 3105,
+    "name": "Deposit/Withdraw: Euro Wallet -> navigation to Deposit, Swap and Exchange screens",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тап на кнопку [Swap]\nТап [<]\nТап на кнопку [Exchange]\nВернуться в Euro кошелек\nТап на кнопку [Withdraw]\nТап [Close]"
+  },
+  {
+    "id": 3103,
+    "name": "Deposit/Withdraw: Euro Deposit screen -> field values can be copied",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 2 of iPhone 17 Pro Max - 26.4\nLaunch App with Setup Context\n  User Info\n    Email: devvenga+3@gmail.com\n    Password: Abcdefg1!\n    User is verified\n  Open com.venga.ios.dev\n    Launch com.venga.ios.dev\n      Setting up automation session\n      Wait for com.venga.ios.dev to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n      Wait for com.apple.springboard to idle\n    Found 1 interrupting element:\n      Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n      \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n    Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking “Venga.dev” Would Like to Send You Notifications\n        Checking existence of `Button (First Match)`\n      Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n        Checking existence of `\"Ask App Not to Track\" Button`\n        Tap \"Ask App Not to Track\" Button\n          Wait for com.apple.springboard to idle\n          Find the \"Ask App Not to Track\" Button\n          Check for interrupting elements affecting \"Ask App Not to Track\" Button\n          Synthesize event\n          Wait for com.apple.springboard to idle\n      Verifying handling...\n      Confirmed successful handling of interrupting element\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify elements on the 'Dashboard' screen\n  Wait end of displaying of activity indicator\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n  Verify Test Dashboard Marker\n    Waiting 30.0s for \"dashboard\" Other to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n        Checking existence of `\"dashboard\" Other`\nTap on 'Wallet' tab bar button\n  Waiting 15.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n    Find the Button (First Match)\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"Wallet\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'WALLET' on screen\n  Waiting 20.0s for \"Wallet\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n      Checking existence of `\"Wallet\" StaticText`\nTap on Euro (SEPA) wallet button\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify wallet title text 'Euro'\n  Waiting 10.0s for \"EURO\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n      Checking existence of `\"EURO\" StaticText`\nTap on 'Deposit' button\n  Waiting 10.0s for \"Deposit\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n      Checking existence of `\"Deposit\" Button`\n  Tap \"Deposit\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Deposit\" Button\n    Check for interrupting elements affecting \"Deposit\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nTap on 'Personal bank account' checkbox\n  Waiting 10.0s for \"checkboxButton\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"checkboxButton\" Button`\n      Checking existence of `\"checkboxButton\" Button`\n  Tap \"checkboxButton\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"checkboxButton\" Button\n    Check for interrupting elements affecting \"checkboxButton\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify 'Continue' button is enabled\n  Find the \"Continue\" Button\nTap on 'Continue' button\n  Waiting 10.0s for \"Continue\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Continue\" Button`\n      Checking existence of `\"Continue\" Button`\n  Find the \"Continue\" Button\n  Tap \"Continue\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Continue\" Button\n    Check for interrupting elements affecting \"Continue\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify title text on the screen\n  Waiting 10.0s for \"DEPOSIT INFORMATION\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"DEPOSIT INFORMATION\" StaticText`\n      Checking existence of `\"DEPOSIT INFORMATION\" StaticText`\nVerify subtitle text on the screen\n  Waiting 10.0s for StaticText (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`\n      Checking existence of `StaticText (First Match)`\nTap on 'Copy' button at index 0\n  Waiting 10.0s for \"Wallet/Reskin/Address/copy\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet/Reskin/Address/copy\" Button`\n      Checking existence of `\"Wallet/Reskin/Address/copy\" Button`\n  Tap \"Wallet/Reskin/Address/copy\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Wallet/Reskin/Address/copy\" Button\n    Check for interrupting elements affecting \"Wallet/Reskin/Address/copy\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text IBAN Copied! on the screen\n  Waiting 10.0s for \"IBAN Copied!\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"IBAN Copied!\" StaticText`\n      Checking existence of `\"IBAN Copied!\" StaticText`\nTap on 'Copy' button at index 1\n  Waiting 10.0s for \"Wallet/Reskin/Address/copy\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet/Reskin/Address/copy\" Button`\n      Checking existence of `\"Wallet/Reskin/Address/copy\" Button`\n  Tap \"Wallet/Reskin/Address/copy\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Wallet/Reskin/Address/copy\" Button\n    Check for interrupting elements affecting \"Wallet/Reskin/Address/copy\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text Recipient Name Copied! on the screen\n  Waiting 10.0s for \"Recipient Name Copied!\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Recipient Name Copied!\" StaticText`\n      Checking existence of `\"Recipient Name Copied!\" StaticText`\nTap on 'Copy' button at index 2\n  Waiting 10.0s for \"Wallet/Reskin/Address/copy\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet/Reskin/Address/copy\" Button`\n      Checking existence of `\"Wallet/Reskin/Address/copy\" Button`\n  Tap \"Wallet/Reskin/Address/copy\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Wallet/Reskin/Address/copy\" Button\n    Check for interrupting elements affecting \"Wallet/Reskin/Address/copy\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text Bank Name Copied! on the screen\n  Waiting 10.0s for \"Bank Name Copied!\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Bank Name Copied!\" StaticText`\n      Checking existence of `\"Bank Name Copied!\" StaticText`\nUser scrolls down the  screen\n  Swipe up Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nTap on 'Copy' button at index 3\n  Waiting 10.0s for \"Wallet/Reskin/Address/copy\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet/Reskin/Address/copy\" Button`\n      Checking existence of `\"Wallet/Reskin/Address/copy\" Button`\n  Tap \"Wallet/Reskin/Address/copy\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Wallet/Reskin/Address/copy\" Button\n    Check for interrupting elements affecting \"Wallet/Reskin/Address/copy\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text BIC Copied! on the screen\n  Waiting 10.0s for \"BIC Copied!\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"BIC Copied!\" StaticText`\n      Checking existence of `\"BIC Copied!\" StaticText`\nUser scrolls down the  screen\n  Swipe up Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nTap on 'Copy' button at index 4\n  Waiting 10.0s for \"Wallet/Reskin/Address/copy\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet/Reskin/Address/copy\" Button`\n      Checking existence of `\"Wallet/Reskin/Address/copy\" Button`\n  Tap \"Wallet/Reskin/Address/copy\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Wallet/Reskin/Address/copy\" Button\n    Check for interrupting elements affecting \"Wallet/Reskin/Address/copy\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text Recipient Address Copied! on the screen\n  Waiting 10.0s for \"Recipient Address Copied!\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Recipient Address Copied!\" StaticText`\n      Checking existence of `\"Recipient Address Copied!\" StaticText`\nTear Down\n  Terminate com.venga.ios.dev:53344"
+  },
+  {
+    "id": 3102,
+    "name": "Deposit/Withdraw: create IBAN -> generation error is displayed",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 2 of iPhone 17 Pro Max - 26.4\nRegister a new user via API\n  Sending POST request to: https://api.dev-venga.com/auth/v2/auth-sessions\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/b5de8577-4aa2-447e-a92e-ac5518b6a93d/otp\n  Sending GET request to: https://api.dev-venga.com/auth/v2/auth-sessions/b5de8577-4aa2-447e-a92e-ac5518b6a93d/otp/verify\n  Sending GET request to: https://api.dev-venga.com/auth/v1/auth-sessions/b5de8577-4aa2-447e-a92e-ac5518b6a93d/geofencing\n  Sending GET request to: https://api.dev-venga.com/consent/v1/agreements\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/b5de8577-4aa2-447e-a92e-ac5518b6a93d/password/create\n  Sending GET request to: https://api.dev-venga.com/profile/v1/profiles/9df3f567-cbc8-43f3-a2b7-22df9be184a5/sections\n  Sending POST request to: https://swagger.dev-venga.com/profile/internal/v1/profiles/9df3f567-cbc8-43f3-a2b7-22df9be184a5/verifications\nLaunch App with Setup Context\n  User Info\n    Email: autotest_obdz58rey9au@test.com\n    Password: Qwerty123!\n    User is verified\n  Open com.venga.ios.dev\n    Launch com.venga.ios.dev\n      Setting up automation session\n      Wait for com.venga.ios.dev to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n      Wait for com.apple.springboard to idle\n    Found 1 interrupting element:\n      Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n      \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n    Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking “Venga.dev” Would Like to Send You Notifications\n        Checking existence of `Button (First Match)`\n      Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n        Checking existence of `\"Ask App Not to Track\" Button`\n        Tap \"Ask App Not to Track\" Button\n          Wait for com.apple.springboard to idle\n          Find the \"Ask App Not to Track\" Button\n          Check for interrupting elements affecting \"Ask App Not to Track\" Button\n          Synthesize event\n          Wait for com.apple.springboard to idle\n      Verifying handling...\n      Confirmed successful handling of interrupting element\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify elements on the 'Dashboard' screen\n  Wait end of displaying of activity indicator\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n  Verify Test Dashboard Marker\n    Waiting 30.0s for \"dashboard\" Other to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n        Checking existence of `\"dashboard\" Other`\nTap on 'Wallet' tab bar button\n  Waiting 15.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n    Find the Button (First Match)\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"Wallet\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'WALLET' on screen\n  Waiting 20.0s for \"Wallet\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n      Checking existence of `\"Wallet\" StaticText`\nTap on Euro (SEPA) wallet button\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify wallet title text 'Euro'\n  Waiting 10.0s for \"EURO\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n      Checking existence of `\"EURO\" StaticText`\nTap on 'Deposit' button\n  Waiting 10.0s for \"Deposit\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n      Checking existence of `\"Deposit\" Button`\n  Tap \"Deposit\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Deposit\" Button\n    Check for interrupting elements affecting \"Deposit\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nTap on 'Personal bank account' checkbox\n  Waiting 10.0s for \"checkboxButton\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"checkboxButton\" Button`\n      Checking existence of `\"checkboxButton\" Button`\n  Tap \"checkboxButton\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"checkboxButton\" Button\n    Check for interrupting elements affecting \"checkboxButton\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify 'Continue' button is enabled\n  Find the \"Continue\" Button\nTap on 'Continue' button\n  Waiting 10.0s for \"Continue\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Continue\" Button`\n      Checking existence of `\"Continue\" Button`\n  Find the \"Continue\" Button\n  Tap \"Continue\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Continue\" Button\n    Check for interrupting elements affecting \"Continue\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify title text on the screen\n  Waiting 10.0s for \"DEPOSIT INFORMATION\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"DEPOSIT INFORMATION\" StaticText`\n      Checking existence of `\"DEPOSIT INFORMATION\" StaticText`\nVerify subtitle text on the screen\n  Waiting 10.0s for StaticText (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`\n      Checking existence of `StaticText (First Match)`\nVerify title text 'Error generating IBAN' on the screen\n  Waiting 10.0s for \"Error generating IBAN\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Error generating IBAN\" StaticText`\n      Checking existence of `\"Error generating IBAN\" StaticText`\nVerify subtitle text on the screen\n  Waiting 10.0s for \"An error occured, please contact Support.\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"An error occured, please contact Support.\" StaticText`\n      Checking existence of `\"An error occured, please contact Support.\" StaticText`\nVerify error image on the screen\n  Waiting 10.0s for \"Common/xmark-circle\" Image to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Common/xmark-circle\" Image`\n      Checking existence of `\"Common/xmark-circle\" Image`\nVerify all 'Copy' buttons are disabled\n  Get all elements bound by index for: Elements matching predicate '\"Wallet/Reskin/Address/copy\" IN identifiers'\n  Find the \"Wallet/Reskin/Address/copy\" Button\n  Find the \"Wallet/Reskin/Address/copy\" Button\n  Find the \"Wallet/Reskin/Address/copy\" Button\n  Find the \"Wallet/Reskin/Address/copy\" Button\n  Find the \"Wallet/Reskin/Address/copy\" Button\nTear Down\n  Terminate com.venga.ios.dev:53224"
+  },
+  {
+    "id": 3090,
+    "name": "Deposit/Withdraw: open deposit from all entry points -> Euro Deposit Disclaimer is displayed",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Set Up\n  Clone 2 of iPhone 17 Pro Max - 26.4\nRegister a new user via API\n  Sending POST request to: https://api.dev-venga.com/auth/v2/auth-sessions\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/05134b34-c887-4f86-aaef-76c8e149b049/otp\n  Sending GET request to: https://api.dev-venga.com/auth/v2/auth-sessions/05134b34-c887-4f86-aaef-76c8e149b049/otp/verify\n  Sending GET request to: https://api.dev-venga.com/auth/v1/auth-sessions/05134b34-c887-4f86-aaef-76c8e149b049/geofencing\n  Sending GET request to: https://api.dev-venga.com/consent/v1/agreements\n  Sending POST request to: https://api.dev-venga.com/auth/v3/auth-sessions/05134b34-c887-4f86-aaef-76c8e149b049/password/create\n  Sending GET request to: https://api.dev-venga.com/profile/v1/profiles/6b5823a5-31d4-453a-bd89-992c97eef4e5/sections\n  Sending POST request to: https://swagger.dev-venga.com/profile/internal/v1/profiles/6b5823a5-31d4-453a-bd89-992c97eef4e5/verifications\nLaunch App with Setup Context\n  User Info\n    Email: autotest_u3v8z0i87mzy@test.com\n    Password: Qwerty123!\n    User is verified\n  Open com.venga.ios.dev\n    Launch com.venga.ios.dev\n      Setting up automation session\n      Wait for com.venga.ios.dev to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Application 'com.apple.springboard'\n    Wait for com.apple.springboard to idle\n    Find the Application 'com.apple.springboard'\n    Check for interrupting elements affecting \" \" Application\n      Wait for com.venga.ios.dev to idle\n    Synthesize event\n    Wait for com.apple.springboard to idle\n  Tap Target Application 'com.venga.ios.dev'\n    Wait for com.venga.ios.dev to idle\n    Find the Target Application 'com.venga.ios.dev'\n    Check for interrupting elements affecting \"Venga.dev\" Application\n      Wait for com.apple.springboard to idle\n    Found 1 interrupting element:\n      Find the \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert\n      \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n    Invoking UI interruption monitors for \"Allow “Venga.dev” to track your activity across other companies’ apps and websites?\" Alert from Application 'com.apple.springboard'\n      Invoking “Venga.dev” Would Like to Send You Notifications\n        Checking existence of `Button (First Match)`\n      Invoking Allow “Venga.dev” to track your activity across other companies’ apps and websites?\n        Checking existence of `\"Ask App Not to Track\" Button`\n        Tap \"Ask App Not to Track\" Button\n          Wait for com.apple.springboard to idle\n          Find the \"Ask App Not to Track\" Button\n          Check for interrupting elements affecting \"Ask App Not to Track\" Button\n          Synthesize event\n          Wait for com.apple.springboard to idle\n      Verifying handling...\n      Confirmed successful handling of interrupting element\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify elements on the 'Dashboard' screen\n  Wait end of displaying of activity indicator\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n      Capturing element debug description\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n  Verify Test Dashboard Marker\n    Waiting 30.0s for \"dashboard\" Other to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n        Checking existence of `\"dashboard\" Other`\nTap on 'Deposit' button\n  Waiting 15.0s for \"Deposit\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n      Checking existence of `\"Deposit\" Button`\n  Checking `Expect predicate `isHittable == 1` for object \"Deposit\" Button`\n    Find the \"Deposit\" Button\n  Tap \"Deposit\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Deposit\" Button\n    Check for interrupting elements affecting \"Deposit\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit' on screen\n  Waiting 20.0s for \"Deposit\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" StaticText`\n      Checking existence of `\"Deposit\" StaticText`\nVerify Coin title is Euro\n  Waiting 10.0s for \"Euro\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n      Checking existence of `\"Euro\" StaticText`\nTap on Currency button with currency: Euro\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nVerify currency text 'Euro' on the screen\n  Waiting 10.0s for \"Euro\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n      Checking existence of `\"Euro\" StaticText`\nVerify transfer text 'SEPA' on the screen\n  Waiting 10.0s for \"SEPA\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"SEPA\" StaticText`\n      Checking existence of `\"SEPA\" StaticText`\nVerify 'Continue' button is disabled\n  Find the \"Continue\" Button\nTap on 'Back' button\n  Waiting 10.0s for \"Common/closeBlack\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Common/closeBlack\" Button`\n      Checking existence of `\"Common/closeBlack\" Button`\n  Tap \"Common/closeBlack\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Common/closeBlack\" Button\n    Check for interrupting elements affecting \"Common/closeBlack\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit' on screen\n  Waiting 20.0s for \"Deposit\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" StaticText`\n      Checking existence of `\"Deposit\" StaticText`\nTap on 'Coin View' button\n  Waiting 10.0s for \"Coin View\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Coin View\" Button`\n      Checking existence of `\"Coin View\" Button`\n  Tap \"Coin View\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Coin View\" Button\n    Check for interrupting elements affecting \"tabsSegmentTab1\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify Coin title is Euro\n  Waiting 10.0s for \"Euro\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n      Checking existence of `\"Euro\" StaticText`\nTap on Currency button with currency: Euro\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nVerify currency text 'Euro' on the screen\n  Waiting 10.0s for \"Euro\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n      Checking existence of `\"Euro\" StaticText`\nTap on 'Back' button\n  Waiting 10.0s for \"Common/closeBlack\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Common/closeBlack\" Button`\n      Checking existence of `\"Common/closeBlack\" Button`\n  Tap \"Common/closeBlack\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Common/closeBlack\" Button\n    Check for interrupting elements affecting \"Common/closeBlack\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit' on screen\n  Waiting 20.0s for \"Deposit\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" StaticText`\n      Checking existence of `\"Deposit\" StaticText`\nTap on 'Back' button\n  Waiting 10.0s for \"BackButton\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"BackButton\" Button`\n      Checking existence of `\"BackButton\" Button`\n  Tap \"BackButton\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"BackButton\" Button\n    Check for interrupting elements affecting \"BackButton\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify elements on the 'Dashboard' screen\n  Wait end of displaying of activity indicator\n    Checking `Expect predicate `exists == 0` for object ActivityIndicator (First Match)`\n      Checking existence of `ActivityIndicator (First Match)`\n  Verify Test Dashboard Marker\n    Waiting 30.0s for \"dashboard\" Other to exist\n      Checking `Expect predicate `existsNoRetry == 1` for object \"dashboard\" Other`\n        Checking existence of `\"dashboard\" Other`\nTap on 'Wallet' tab bar button\n  Waiting 15.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Checking `Expect predicate `isHittable == 1` for object Button (First Match)`\n    Find the Button (First Match)\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"Wallet\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'WALLET' on screen\n  Waiting 20.0s for \"Wallet\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Wallet\" StaticText`\n      Checking existence of `\"Wallet\" StaticText`\nTap on Euro (SEPA) wallet button\n  Waiting 10.0s for Button (First Match) to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`\n      Checking existence of `Button (First Match)`\n  Tap Button (First Match)\n    Wait for com.venga.ios.dev to idle\n    Find the Button (First Match)\n    Check for interrupting elements affecting \"eurSepaFiatBalance\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify wallet title text 'Euro'\n  Waiting 10.0s for \"EURO\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"EURO\" StaticText`\n      Checking existence of `\"EURO\" StaticText`\nTap on 'Deposit' button\n  Waiting 10.0s for \"Deposit\" Button to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit\" Button`\n      Checking existence of `\"Deposit\" Button`\n  Tap \"Deposit\" Button\n    Wait for com.venga.ios.dev to idle\n    Find the \"Deposit\" Button\n    Check for interrupting elements affecting \"Deposit\" Button\n    Synthesize event\n    Wait for com.venga.ios.dev to idle\nVerify text title 'Deposit Information' on the screen\n  Waiting 10.0s for \"Deposit Information\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Deposit Information\" StaticText`\n      Checking existence of `\"Deposit Information\" StaticText`\nVerify currency text 'Euro' on the screen\n  Waiting 10.0s for \"Euro\" StaticText to exist\n    Checking `Expect predicate `existsNoRetry == 1` for object \"Euro\" StaticText`\n      Checking existence of `\"Euro\" StaticText`\nTear Down\n  Terminate com.venga.ios.dev:53572"
+  },
+  {
+    "id": 3066,
+    "name": "Deposit/Withdraw: User enters own address -> Error is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address корректный адрес кошелька текущего аккаунта\nВвести корректную сумму в поле Amount to send\nПосле ввода суммы происходит валидация полей. Под полем с адресом отобразилась ошибка \"You can't send funds to your own wallet\""
+  },
+  {
+    "id": 3067,
+    "name": "Deposit/Withdraw: User enters amount outside the limits -> error is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address валидный адрес выбранной сети кошелька получателя\nВвести сумму ниже минимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The minimum amount is XX'\nВвести сумму выше максимального лимита в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'The maximum amount XX'\nВвести сумму выше баланса выбранной монеты в поле Amount to send\n  Под полем ввода суммы отобразится ошибка 'Insufficient funds"
+  },
+  {
+    "id": 3073,
+    "name": "Deposit/Withdraw: User enters address from another network -> error is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address корректный адрес кошелька из любой другой сети\nВвести корректную сумму в поле Amount to send\n  После ввода суммы происходит валидация полей. Под полем с адресом отобразилась ошибка \"Invalid address\""
+  },
+  {
+    "id": 3074,
+    "name": "Deposit/Withdraw: User enters invalid address -> error is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Перейти на флоу Send любого кошелька\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address неверный адрес\nВвести корректную сумму в поле Amount to send\n  Под полем Wallet address отобразилась ошибка \"Invalid address\""
+  },
+  {
+    "id": 3011,
+    "name": "Deposit/Withdraw: tap 'Copy' -> confirmation snackbar is shown",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Нажать Add funds\n  Открылся список кошельков для пополнения\nВвести название желаемого токена в поле поиска\n  Список токенов фильтруется по сети, согласно введенному значению\nВыбрать любой токен в списке\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Tap to show my address\n  В поле отобразился адрес кошелька\nНажать Copy\n  Отобразился всплывающий тост \"Address Copied\""
+  },
+  {
+    "id": 2487,
+    "name": "Deposit/Withdraw: Close 'Withdrawal Iban' BottomSheet",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Нажать на крестик\nСвайпнуть в низ\nТапнуть по области за пределами боттомшита"
+  },
+  {
+    "id": 2485,
+    "name": "Deposit/Withdraw: Successful Euro Withdraw",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тап по кнопке Confirm\n  Открывается экран Withraw Processing\n  Отображаются данные amount и fee\n  Кнопка Done"
+  },
+  {
+    "id": 2484,
+    "name": "Deposit/Withdraw: Navigation from 'Confirm Euro Withdrawal' screen back to 'Withdraw Euro' screen",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть на иконку Назад\n  Отображается экран Withdraw Euro"
+  },
+  {
+    "id": 2483,
+    "name": "Deposit/Withdraw: Navigation to 'Confirm Euro Withdrawal' screen",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть на кнопку Review\n  Открывается экран Confirm Euro Withdrawal\n  Amount to be received = total - fee\nDetails\n  Total amount\n  Transaction Fee\n  Transfer Method\n  Withdrawal IBAN\n  Description (если было заполнено на предыдущем шаге)"
+  },
+  {
+    "id": 2482,
+    "name": "Deposit/Withdraw: Amount: Manual input valid amount to Withdraw",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "В поле \"Amount\" ввести валидное значение (в пределах минимального-максимального значения, в пределах своего баланса).\n  Поле \"Amount\" - заполненно введенным значением\n  Fee: nn,nn EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=введенное значение)\n  Final Amount: nn,nn EUR \n(= Amount + Fee)\nСвернуть клавиатуру\n  Кнопка [Continue] под полем \"Final Amount\" становится активной"
+  },
+  {
+    "id": 2481,
+    "name": "Deposit/Withdraw: Amount: Manual input more than Balance (Available)",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Ввести значение больше, чем есть на баласе\n  Отображается ошибка Insufficient Funds\n  Кнопка [Continue] неактивна"
+  },
+  {
+    "id": 2480,
+    "name": "Deposit/Withdraw: Amount: Manual input less than Min limit",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Ввести значение меньше минимального\n  Отображается ошибка \"Minimum amount is {number}\"\n  Кнопка [Continue] нективна."
+  },
+  {
+    "id": 2479,
+    "name": "Deposit/Withdraw: Receiving the Max and Min limits for Withdaw Euro",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тапнуть на Withdraw\n  Открывается экран Euro Withdraw\n  Отправляется запрос GET /operation/v1/fiat-wallets/limits?currencyCode=EUR\n  Запрос вернул 200 ОК и лимиты. Примерный ответ: \n{     \"limits\": {         \"EUR\": {             \"minAmount\": 1.0,             \"maxAmount\": 10000.0,             \"fee\": 2.5         }     } }"
+  },
+  {
+    "id": 2478,
+    "name": "Deposit/Withdraw: Withdraw EUR percent tapped [25%][50%][75%][Max] (balance 3,000 EUR) -> fee and final amount are calculated",
+    "layer": "iOS",
+    "automated": true,
+    "steps_text": "Тап на [25%]\n  Поле \"Amount\" - 750.00\n(= Available * 0.25)\n  Fee: 1.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=750.0)\n  Final Amount: 751.00 EUR \n(= Amount + Fee)\nТап на [50%]\n  Поле \"Amount\" - 1500.00\n(= Available * 0.50)\n  Fee: 5.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=1500.0)\n  Final Amount: 1505.00 EUR \n(= Amount + Fee)\nТап на [75%]\n  Поле \"Amount\" - 2250.00\n(= Available * 0.75)\n  Fee: 5.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=1500.0)\n  Final Amount: 2255.00 EUR \n(= Amount + Fee)\nТап на [Max]\n  Поле \"Amount\" - 2995.00\n(= Available - Fee)\n  Fee: 5.00 EUR \n(= ответ вызова GET /operation/v1/fiat-wallets/*/withdrawals/fee?amount=2995.0)\n  Final Amount: 3000.00 EUR \n(= Available)"
+  },
+  {
+    "id": 2477,
+    "name": "Deposit/Withdraw: Changing Withdrawal Bank Account",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапунть на поле выбора Withdrawal Bank Account\n  Открывается боттомшит с доступными айбанами\nВыбрать любой другой IBAN\n  Bottom sheet закрыт\n  В поле Withdrawal Bank Account отображается только что выбранный IBAN"
+  },
+  {
+    "id": 2476,
+    "name": "Deposit/Withdraw: Opening \"Withdrawal bank account\" bottom sheet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на поле \"Withdrawal Bank Account\"\n  Открыт bottom sheet с выбором IBAN для вывода\n  Заголовок \"Withdrawal Bank Accounts\"\n  Кнопка закрытия \"х\"\n  Сортировка - по дате добавления банковского счета\n  Формат отображения - Ending in 1234 (последние 4 цифры IBAN)\n  Поле Latest Transaction + дата (в формате 14 Nov 2024 - 20:15)"
+  },
+  {
+    "id": 2475,
+    "name": "Deposit/Withdraw: Withdraw Euro Screen",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на кнопку [Withdraw]\n  Открылся экран \"WITHDRAW EUR\"\n  Заголовок: Euro / Withdraw\nCoin Section:\n  METHOD - INSTANT SEPA\n  BALANCE - сумма баланса пользователя, приходит с бэка\n  Большая иконка монеты Евро в правом верхнем углу\nWithdrawal Bank Account. Название поля выбора аккаунта вывода:\n  Тултип (i) - для открывания информационного bottom sheet \"Withdrawal Bank Accounts\"\n  Поле выбора Bank account c предзаполненным IBAN на который планируется вывод\n  IBAN в виде \"Ending in 1234\"\n  Стрелка \">\" в правой части поля.\nAmount - Поле ввода суммы вывода на другой аккаунт.\n  Иконка \"EUR\"\n  Поле не заполнено, отображена маска 0,00\n  Под маской 0,00 отображено поле \"$0,00\" если валюта пользователя выбрана USD в Settings / Currency\n  Кнопки [25%], [50%] , [75%], [Max] над полем ввода суммы\n  Available - баланс кошелька (значение как в \"BALANCE\" в Coin Section).\nAdd a description - раскрывающееся поле ввода текста, со значком \"+\"\nProcessing time - захардкоженный текст с описанием\nFee: - значение комиссии в евро, с бэка\nFinal amount: - финальная сумма, списываемвая со своего аккаунта (Final Amount = Amount + Fee)\nКнопка [Continue], неактивна."
+  },
+  {
+    "id": 2265,
+    "name": "Deposit/Withdraw: Свернуть приложение на экране \"Deposit Euro\" и открыть через минуту",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2264,
+    "name": "Deposit/Withdraw: Свернуть приложение на экране \"Deposit Euro\" и сразу открыть",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2263,
+    "name": "Deposit/Withdraw: Навигация \"Назад\" с экрана \"Deposit Euro\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2262,
+    "name": "Deposit/Withdraw: Deposit Euro Screen. Проверка UI-элементов экрана",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2241,
+    "name": "Deposit/Withdraw: Запрет перехода в Депозит из bottom sheet \"Make a deposit first\" для пользователей не из EU",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на [Deposit]"
+  },
+  {
+    "id": 2240,
+    "name": "Deposit/Withdraw: Переход в Депозит из bottom sheet \"Make a deposit first\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тап на [Deposit]"
+  },
+  {
+    "id": 2239,
+    "name": "Deposit/Withdraw: Открытие bottom sheet \"Make a deposit first\" у пользователя без депозита евро",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на [Withdraw]\nТап на \"Закрыть\" [X]"
+  },
+  {
+    "id": 2230,
+    "name": "Deposit/Withdraw: Переход на экран 'Euro Deposit Disclaimer' с экрана 'Euro Wallet'",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2229,
+    "name": "Deposit/Withdraw: Переход на экран 'Euro Deposit Disclaimer' с экрана 'Euro Wallet' и возврат назад",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2228,
+    "name": "Deposit/Withdraw: Переход на экран 'Euro Deposit Disclaimer' с экрана 'CoinView'",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2227,
+    "name": "Deposit/Withdraw: Свернуть приложение на экране 'Euro Deposit Disclaimer', подождать больше минуты и снова открыть\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2226,
+    "name": "Deposit/Withdraw: Свернуть приложение на экране 'Euro Deposit Disclaimer' и снова открыть\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2224,
+    "name": "Deposit/Withdraw: Переход на экран 'Euro Deposit Disclaimer' и возврат на предыдущий экран",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": ""
+  },
+  {
+    "id": 2220,
+    "name": "Deposit/Withdraw: KYC RETRY - навигация \"Назад\" с экрана \"Identity check failed\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Identity check failed\"\nТапнуть на иконку \"Назад\" слева вверху\n  Открывается экран \"Euro Wallet\""
+  },
+  {
+    "id": 2219,
+    "name": "Deposit/Withdraw: KYC RETRY - навигация в Sumsub c экрана \"Identity check failed\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Identity check failed\"\nТапнуть на кнопку \"Verify Identity\"\n  Открывается Sumsub"
+  },
+  {
+    "id": 2218,
+    "name": "Deposit/Withdraw: KYC RETRY - отображение экрана \"Identity check failed\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Identity check failed\""
+  },
+  {
+    "id": 2217,
+    "name": "Deposit/Withdraw: KYC Unverified - отображение экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Additional information required\""
+  },
+  {
+    "id": 2216,
+    "name": "Deposit/Withdraw: KYC Reveryfication - Навигация \"Назад\" с экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Additional information required\"\nТапнуть на иконку \"Назад\" слева вверху\n  Открывается экран \"Euro Wallet\""
+  },
+  {
+    "id": 2215,
+    "name": "Deposit/Withdraw: KYC Pending - навигация по кнопке \"Done\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть на кнопку \"Deposit\n  Отображается экран \"We're verifying your identity, please check back later!\"\nТапнуть по кнопке \"Done\"\n  Отображается экран \"Home\""
+  },
+  {
+    "id": 2214,
+    "name": "Deposit/Withdraw: KYC NOT_INIT - навигация в Sumsub с экрана \"Identity Verification Required\"",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тапнуть на \"Deposit\"\n  Открывается экран для верификации пользователя - \"Identity Verification Required\"\nТапнуть на кнопку \"Verify Identity\"\n  Открывается Sumsub"
+  },
+  {
+    "id": 2213,
+    "name": "Deposit/Withdraw: Отображение пустого баланса у неверифицированного юзера при отсутствии IBAN",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти на экран Wallet\n  В самом верху My Assets отображается \"Euro\" asset c нулевым балансом\nТапнуть по плашке \"Euro\"\n  Открывается экран \"Euro Wallet\"\n  Все элементы соответствуют дизайну"
+  },
+  {
+    "id": 2040,
+    "name": "Deposit/Withdraw: Euro Wallet. Навигация по различным экранам",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на кнопку [Swap]\nТап [<]\nТап на кнопку [Exchange]\nВернуться в Euro кошелек\nТап на кнопку [Withdraw]\nТап кнопку \"Назад\"[<]"
+  },
+  {
+    "id": 2038,
+    "name": "Deposit/Withdraw: Open Deposit Eur with VPN enabled",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Attention: Особенность бэкенд реализации - кейс сработает только с некоторыми открытыми VPN из Google Play и App store. Система не определит Коммерческие VPN, прокси-серверы и др.\nНажать кнопку [Deposit]"
+  },
+  {
+    "id": 2037,
+    "name": "Deposit/Withdraw: Open Deposit Eur in unavailable country",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Нажать кнопку [Deposit]"
+  },
+  {
+    "id": 2012,
+    "name": "Deposit/Withdraw: tap 'Share' -> system share sheet is opened",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать Deposit\n  Открылся список кошельков для пополнения\nВыбрать любой токен из списка\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Share\n  Открылся системный BottomSheet с возможностью поделиться адресом кошелька"
+  },
+  {
+    "id": 2011,
+    "name": "Deposit/Withdraw: save QR as image -> confirmation snackbar is shown",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать Deposit\n  Открылся список кошельков для пополнения\nВыбрать любой токен из списка\n  Открылся bottom-sheet с предупреждением о сети выбранного токена. Кнопка Continue не кликабельна\nАктивировать чек-бокс\n  Кнопка Continue стала кликабельной\nНажать Continue\n  Отобразился экран Deposit c QR кодом\nНажать Save As Image\n  Отобразилось всплывающее уведомление с текстом Image Saved\nПроверить что изображение появилось в галерее устройства\nВ сохранённом изображение отображется список информации:\nИнформация о токене:\nзначок и название (DEPOSIT BTC)\nсеть (например, BITCOIN)\nQR-код адреса пользователя в фирменном интерфейсе\nСтрока адреса\nНовый текст отказа от ответственности"
+  },
+  {
+    "id": 2003,
+    "name": "Deposit/Withdraw: Создание IBAN со статусом INITIAL",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тап на [Continue]\nВ сниффере трафика подменить json ответа, в котором статус IBAN проставить INITIAL. Пример ниже \n{\n\t\"uuid\": \"46d5f1cf-c5ba-4155-aaca-b5e9f79f2383\",\n\t\"currencyCode\": \"EUR\",\n\t\"balance\": 0.0,\n\t\"state\": \"INITIAL\"\n}\nВ сниффере трафика подменить json ответа, в котором статус IBAN проставить INITIAL, а объект data вернуть пустым. Пример ниже:\n{\n\t\"uuid\": \"46d5f1cf-c5ba-4155-aaca-b5e9f79f2383\",\n\t\"currencyCode\": \"EUR\",\n\t\"balance\": 0.0,\n\t\"state\": \"INITIAL\",\n\t\"data\": {\t}\n}"
+  },
+  {
+    "id": 2001,
+    "name": "Deposit/Withdraw: Ошибка при создании IBAN",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Перейти на экран дисклеймера IBAN с экрана Euro Wallet\n  Перейти в Wallet\n    Открылся экран Wallet.\n    Euro Wallet расположен на первом месте\n  Тап по Euro Wallet\n    Открылся экран Euro Wallet\n  Тап по Deposit\n    Открылся дисклеймер, кнопка Continue не активна\n  Тап по чекбоксу\n    Кнопка Continue стала активна\nТап на Continue. Перехватить запрос POST\nВернуть 500\n  Отображается ошибка в поле IBAN \"Error generating IBAN\" Все поля заполнены прочерками, кнопки копирования задизэйблены"
+  },
+  {
+    "id": 2000,
+    "name": "Deposit/Withdraw: Переход и отображение корретктных данных на экране 'Euro Deposit Disclaimer'",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Навигация на Wallet/Euro экран (v2.3.9)\n  Тап на \"Euro\" в \"My Assets\" списке\n  Экран \"EURO\" открыт.\nТап на [Deposit] (Экран \"EURO\")\n  Тап на кнопку [Deposit]\n  Проставить чек-бокс предупреждения в нижней части экрана"
+  },
+  {
+    "id": 1993,
+    "name": "Deposit/Withdraw: PTR на экране Euro Wallet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Выполнить действие pull to refresh на экране приложения\nПроверить отправленные запросы к бэку в сниффере трафика (Charles, Proxyman, и др)"
+  },
+  {
+    "id": 1992,
+    "name": "Deposit/Withdraw: PTR на экране Wallet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Выполнить действие pull to refresh на экране приложения\nПроверить отправленный запрос к бэку в сниффере трафика (Charles, Proxyman, и др)"
+  },
+  {
+    "id": 1990,
+    "name": "Deposit/Withdraw: Обновление баланса на экранах WALLET; EURO",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Запомнить сумму его баланса Евро кошелька и сумму в  \"Total Balance\"\nПополнить Евро кошелек и проверить его баланс\nПроверить сумму в  \"Total Balance\"\nСравнить баланс \"Total Balance\" на вкладках \"Wallet\" и \"Home\"\n  Сравнить сумму баланса в \"Total Balance\" на вкладке \"Wallet\" с суммой \"Total Balance\"  на вкладке \"Home\"  в выбранной валюте\nПерейти в Евро кошелек: Wallet - Euro\nПроверить баланс Евро кошелька"
+  },
+  {
+    "id": 1988,
+    "name": "Deposit/Withdraw: Проверка корректности расчета рейтов EUR-USD",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Запомнить общую сумму активов в Total Balance и баланс Евро кошелька\nВ настройках Settings - Currency выбрать US Dollars\nВернуться на вкладку \"Wallet\".\nПроверить правильность расчета суммы баланса Евро кошелька в выбранной валюте, в соответствии с рейтом EUR-USD\nПроверить правильность расчета суммы \"Total Balance\"  в выбранной валюте, в соответствии с рейтом EUR-USD\nВ настройках Settings - Currency выбрать Euro\nВернуться на вкладку \"Wallet\".\nПроверить валюту и правильность расчета суммы баланса Евро кошелька и Total Balance"
+  },
+  {
+    "id": 1987,
+    "name": "Deposit/Withdraw: Корректность отображения валюты Евро кошелька в зависимости от валюты по умолчанию",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Убедиться, что номинальная стоимость всех активов на вкладке  \"Wallet\" рассчитана и показана в валюте по умолчанию (в данном случае - Евро)\nУбедиться, что сумма активов в \"Total Balance\" на вкладке  \"Wallet\" рассчитана и показана в валюте по умолчанию (в данном случае - Евро)\nПерейти в Евро кошелек и проверить валюту его баланса\nПереключить в настройках Settings - Currency валюту на US Dollar и вернуться на Евро кошелек\nНажать [<]\nСравнить баланс \"Total Balance\" на вкладках \"Wallet\" и \"Home\"\n  Сравнить сумму баланса в \"Total Balance\" на вкладке \"Wallet\" с суммой \"Total Balance\"  на вкладке \"Home\"  в выбранной валюте"
+  },
+  {
+    "id": 1984,
+    "name": "Deposit/Withdraw: Создание айбана из Add Funds",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Навигация на Wallet/Euro экран (v2.3.9)\n  Тап на \"Euro\" в \"My Assets\" списке\n  Экран \"EURO\" открыт.\nТап на [Deposit] (Экран \"EURO\")\n  Тап на кнопку [Deposit]\n  Проставить чек-бокс предупреждения в нижней части экрана\nТап на [Continue]\nПроверить ответ на запрос POST"
+  },
+  {
+    "id": 1980,
+    "name": "Deposit/Withdraw: Отображение нулевого баланса на вкладке Home - Add Funds - List View/Coin View",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "[+Add Funds] - вкладка \"List View\" (Euro)\n  Тап на [+Add Funds]\nПроверить баланс Euro кошелька\nПереход на вкладку \"Coin View\" (Euro)\n  Тап на вкладку \"Coin View\"\nПроверить баланс Euro кошелька"
+  },
+  {
+    "id": 1979,
+    "name": "Deposit/Withdraw: Отображение нулевого баланса на вкладке Wallet  - Add Funds - List View/Coin View",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "[+Add Funds] - вкладка \"List View\" (Euro)\n  Тап на [+Add Funds]\nПроверить баланс Euro кошелька\nПереход на вкладку \"Coin View\" (Euro)\n  Тап на вкладку \"Coin View\"\nПроверить баланс Euro кошелька"
+  },
+  {
+    "id": 1977,
+    "name": "Deposit/Withdraw: Wallet. Общий баланс крипто + евро",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Проверить баланс кошелька \"Euro\" в списке \"My Assets\"\n  Начислить сумму в евро на Евро кошелек и проверить его баланс\nCложить сумму всех  активов списке \"My Assets\"\n  Cложить сумму всех  активов  в списке \"My Assets\" (криптовалюты + фиатный кошелек) в выбранной валюте пользователя\n  Сравнить сумму \"My Assets\"с суммой в \"Total Balance\"\nСравнить баланс \"Total Balance\" на вкладках \"Wallet\" и \"Home\"\n  Сравнить сумму баланса в \"Total Balance\" на вкладке \"Wallet\" с суммой \"Total Balance\"  на вкладке \"Home\"  в выбранной валюте"
+  },
+  {
+    "id": 1976,
+    "name": "Deposit/Withdraw: Отображение нулевого баланса на экране Wallet и Euro Wallet",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Запустить приложение\nПерейти на экран Wallet\n  Euro Wallet отображается на первом месте в списке всех кошельков. Баланс 0.00\nТапнуть по плашке Euro Wallet\n  Открывается экран Euro Wallet. Баланс 0.00"
+  },
+  {
+    "id": 1933,
+    "name": "Deposit/Withdraw: Успешное создание IBAN из Euro Wallet",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Перейти в Wallet\n  Открылся экран Wallet.\n  Euro Wallet расположен на первом месте\nТап по Euro Wallet\n  Открылся экран Euro Wallet\nТап по Deposit\n  Открылся дисклеймер, кнопка Continue не активна\nТап по чекбоксу\n  Кнопка Continue стала активна\nТап по Continue\n  Открывается экран Deposit Information. Отправляется POST запрос на создание айбана\n  На момент обработки запроса в поле IBAN отображается лоадер и текст \"Generating IBAN\". Во всех остальных полях - прочерк.\nЗапрос вернул 200 и статус ACTIVE.\n  Отправляется запрос /info\n  Продолжает отображаться лоадер и прочерки\n/info вернул 200 и всю инфу по айбану\n  Все поля заполнены корректными данными\n  Сверху появляется тоаст \"IBAN GENERATED\""
+  },
+  {
+    "id": 1926,
+    "name": "Deposit/Withdraw: KYC Reveryfication - навигация в Sumsub с экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Отображается экран \"Additional information required\"\nТапнуть по кнопке \"Continue verification process\"\n  Открывается Sumsub"
+  },
+  {
+    "id": 1925,
+    "name": "Deposit/Withdraw: KYC Unverified - навигация в Sumsub с экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Additional information required\"\nТапнуть по кнопке \"Continue verification process\"\n  Открывается Sumsub"
+  },
+  {
+    "id": 1924,
+    "name": "Deposit/Withdraw: KYC NOT_INIT - навигация \"Назад\" с экрана \"Identity Verification Required\"",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран для верификации пользователя - \"Identity Verification Required\"\nТапнуть на иконку \"Назад\" слева вверху\n  Отображается экран \"Euro Wallet\""
+  },
+  {
+    "id": 1923,
+    "name": "Deposit/Withdraw: KYC Reveryfication - Отображение экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Additional information required\""
+  },
+  {
+    "id": 1922,
+    "name": "Deposit/Withdraw: KYC NOT_INIT - отображение экрана \"Identity Verification Required\"",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран для верификации пользователя - \"Identity Verification Required\"\n  Слева вверху находится иконка \"Назад\"\n  Под текстом находится кнопка \"Verify Identity\""
+  },
+  {
+    "id": 1921,
+    "name": "Deposit/Withdraw: KYC Unverified - Навигация \"Назад\" с экрана \"Additional information required\"",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Открывается экран \"Additional information required\"\nТапнуть на иконку \"Назад\" слева вверху\n  Открывается экран \"Euro Wallet\""
+  },
+  {
+    "id": 1920,
+    "name": "Deposit/Withdraw: KYC Pending - Отображение экрана верификации",
+    "layer": "Android",
+    "automated": false,
+    "steps_text": "Тапнуть по кнопке \"Deposit\"\n  Отображается экран \"We're verifying your identity, please check back later!\""
+  },
+  {
+    "id": 1830,
+    "name": "Deposit/Withdraw: Send. Перевод через blockchain",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Открыть экран Send токена из параметров тест-кейса\nНажать на строку Paste address here\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nВставить в поле Address валидный адрес кошелька получателя\nВвести корректную сумму в поле Amount to send\nАктивировать чекбокс Send via Blockchain\nНажать Continue\n  Открылся экран подтверждения транзакции\nАктивировать чек-бокс\n  Кнопка Confirm стала активной\nНажать Confirm\n  Открылся экран Check your email\nНажать Go to inbox\nПодтвердить перевод в полученном письме на email\n  Отобразился экран успеха. Транзакция корректно отображается в BPM, средства отобразились на балансе у получателя. Транзакция корректно отображается в истории операций по счёту."
+  },
+  {
+    "id": 1115,
+    "name": "Deposit/Withdraw: Send. Перевод внутри сети Venga",
+    "layer": "",
+    "automated": false,
+    "steps_text": "Перейти на флоу Send через Dashboard\n  Открылся экран выбора ассета\nВыбрать любой ассет с балансом > 0\n  Открылся экран Send выбранного ассета\nНажать на QR\n  Открылось окно-предупреждение о сети ассета\nАктивировать чек-бокс и нажать Continue\nОтсканировать валидный QR с адресом кошелька пользователя Venga\n  В поле Address автоматически подставился отсканированный адрес\nВвести корректную сумму перевода в поле Amount to send\nВвести любое описание в поле Description\nНажать Continue\n  Открылся экран подтверждения транзакции\nАктивировать чек-бокс\n  Кнопка Confirm стала активной\nНажать Confirm\n  Открылся экран Check your email\nНажать Go to inbox\nПодтвердить перевод в полученном письме на email\n  Отобразился экран успеха. Транзакция корректно отображается в BPM, средства отобразились на балансе у получателя. Транзакция корректно отображается в истории операций по счёту."
+  },
+  {
+    "id": 1083,
+    "name": "Deposit/Withdraw: Search for existing token -> token appears in results",
+    "layer": "Android",
+    "automated": true,
+    "steps_text": "Нажать Deposit\n  Открылся список доступных для пополнения кошельков\nВ поле поиска ввести currency code любого токена\n  Список обновился в соответствии с условиями поискового запроса\nВ поле поиска ввести название любого токена\n  Список обновился в соответствии с условиями поискового запроса\nВ поле поиска ввести название любой сети\n  Список обновился в соответствии с условиями поискового запроса"
+  }
+]
